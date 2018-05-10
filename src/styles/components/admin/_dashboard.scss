@@ -1,0 +1,50 @@
+.dashboard {
+  display: flex;
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+  }
+}
+
+.dashboard__menu {
+  background-color: $light-blue;
+  flex: 1;
+  @media (min-width: $desktop-breakpoint) {
+    min-height: 100vh;
+    // min-height: calc(100vh - 104px);
+  }
+}
+
+.dashboard__content {
+  flex: 6;
+  h1 {
+    text-align: center;
+  }
+}
+
+.dashboard__content--home {
+  display: flex;
+  flex: 6;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dashboard__info {
+  flex: 5;
+  padding: $s-size 0;
+}
+
+.dashboard__birthday {
+  background-color: $off-white;
+  flex: 2;
+  text-align: center;
+}
+
+.dashboard__image-home {
+  background-color: #e8cad6;
+  height: 100vh;
+  width: 100%;
+}
+
+.chart {
+  margin-bottom: $s-size;
+}

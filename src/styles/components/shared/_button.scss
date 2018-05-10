@@ -1,0 +1,55 @@
+.button {
+  background: $blue;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-size: $font-size-medium;
+  font-weight: 300;
+  line-height: 1;
+  padding: $s-size;
+  text-decoration: none;
+}
+
+.button__image {
+  height: 50px;
+  // margin-right: 0.5em;
+  width: 50px;
+}
+
+.button__profile {
+  align-items: center;
+  display: flex;
+}
+
+.button--link {
+  background: none;
+}
+
+.button--secondary {
+  background: #888;
+}
+
+// Site
+
+.button--home {
+  background: #cb372c;
+  color: white;
+  font-family: $text-font;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding: 1.2rem 4rem;
+  text-transform: uppercase;
+}
+
+.button__site {
+  background: transparent;
+  border: 2px solid #ff7428;
+  border-radius: 20px;
+  color: $off-white;
+  padding: 1.3rem 3rem;
+  text-transform: uppercase;
+}
+
+.button__site--margin {
+  margin-top: 2rem;
+}

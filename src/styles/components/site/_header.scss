@@ -1,0 +1,50 @@
+.header-grid {
+  background: $header_background;
+  grid-column: col 1 / -1;
+  grid-row: row 1;
+  height: 9rem;
+  z-index: 1;
+}
+
+.header {
+  @extend .title__font;
+  align-items: center;
+  background-color: $header_background;
+  display: flex;
+  height: 9rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+  @media (min-width: $desktop-breakpoint) {
+    padding: 0 10rem;
+  }
+}
+
+.header__nav {
+  align-items: center;
+  color: $header_color;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  justify-content: center;
+  text-transform: uppercase;
+  li:nth-child(even) {
+    opacity: 0;
+    padding: 0;
+    @media (min-width: $desktop-breakpoint) {
+      opacity: 1;
+      padding: 0 2rem;
+    }
+  }
+  a {
+    color: $header_color;
+  }
+  @media (min-width: $desktop-breakpoint) {
+    justify-content: flex-start;
+  }
+}
+
+.header__brand {
+  color: #edb19a;
+  font-size: 3rem;
+  text-transform: uppercase;
+}

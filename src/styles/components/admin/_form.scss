@@ -1,0 +1,34 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  > * {
+    margin-bottom: $m-size;
+  }
+}
+
+.form__group {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: $m-size;
+  }
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    > *:not(:last-child) {
+      margin-right: $m-size;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form__group--checkbox {
+  align-items: center;
+  display: flex;
+}
+
+.form__error {
+  margin: 0 0 $m-size 0;
+  font-style: italic;
+}

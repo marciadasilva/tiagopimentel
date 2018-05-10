@@ -1,0 +1,18 @@
+.title__font {
+  font-family: $title-font;
+  letter-spacing: 3px;
+}
+
+// @mixin button-mixin-gradient(border, $color, $radius: 0px) {
+//   background: $bg;
+//   border-radius: $radius;
+//   color: $color;
+//   padding: 1rem;
+//   text-transform: uppercase;
+// }
+
+.grid-hero {
+  display: grid;
+  grid-template: repeat(6, [row] minmax(120px, 1fr)) / repeat(6, [col] 1fr);
+  grid-gap: 20px;
+}
