@@ -1,15 +1,15 @@
-import * as firebase from 'firebase';
+import * as firebase from "firebase";
 
 const config = {
-  apiKey: 'AIzaSyDD8vrdgcmY2gbyY7BJ8lxnhy_3Y9EPhPY',
-  authDomain: 'tiago-mma-app.firebaseapp.com',
-  databaseURL: 'https://tiago-mma-app.firebaseio.com',
-  projectId: 'tiago-mma-app',
-  storageBucket: 'tiago-mma-app.appspot.com',
-  messagingSenderId: '540549929948'
+  apiKey: "AIzaSyDZfoIr_o0mqbVkcP9F1QINRjOHbERYJfA",
+  authDomain: "tiago-pimentel.firebaseapp.com",
+  databaseURL: "https://tiago-pimentel.firebaseio.com",
+  projectId: "tiago-pimentel",
+  storageBucket: "tiago-pimentel.appspot.com",
+  messagingSenderId: "965532265633"
 };
 
-firebase.initializeApp(config);
+firebase.iniializeApp(config);
 
 const database = firebase.database();
 const storage = firebase.storage().ref();
