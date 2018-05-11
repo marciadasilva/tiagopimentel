@@ -1,7 +1,7 @@
 .header-grid {
   background: $header_background;
-  grid-column: col 1 / -1;
-  grid-row: row 1;
+  grid-column: 1 / -1;
+  grid-row: 1;
   height: 9rem;
   z-index: 1;
 }
