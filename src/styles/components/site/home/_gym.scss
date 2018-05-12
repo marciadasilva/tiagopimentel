@@ -1,0 +1,96 @@
+.gym {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gym__list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  width: 90vw;
+  margin-top: 2rem;
+
+  > * {
+    flex-basis: 100%;
+    @media (min-width: $desktop-breakpoint) {
+      flex-basis: 50%;
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-wrap: nowrap;
+  }
+}
+
+.gym__list:last-child() {
+  flex-wrap: wrap;
+  @media (min-width: $desktop-breakpoint) {
+    flex-wrap: nowrap;
+  }
+}
+
+.gym__text {
+  align-items: center;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40rem;
+}
+
+.gym__name {
+  color: #edb19a;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.gym__title {
+  font-size: 1.3rem;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.gym__icon {
+  color: #edb19a;
+  font-size: 1.3rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.gym__description {
+  font-family: $text-font;
+  font-size: 1.1rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  @media (min-width: $desktop-breakpoint) {
+    padding: 0.5rem 12rem;
+  }
+}
+
+.gym__img {
+  height: 40rem;
+  width: 100%;
+}
+
+.gym__img--1 {
+  margin-right: 0;
+  background: url('/images/academia-particular.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-width: $desktop-breakpoint) {
+    margin-right: 2.5rem;
+  }
+}
+.gym__img--2 {
+  margin-left: 0;
+  background: url('/images/academia-sogi.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-width: $desktop-breakpoint) {
+    margin-left: 2.5rem;
+  }
+}

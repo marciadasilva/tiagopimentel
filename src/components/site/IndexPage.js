@@ -3,6 +3,8 @@ import Header from './Header';
 import Footer from './Footer';
 import Hero from './home/Hero';
 import ClassesList from './home/ClassesList';
+import Gym from './home/Gym';
+import Partnership from './home/Partnership';
 
 class IndexPage extends React.Component {
   componentDidMount() {
@@ -16,6 +18,8 @@ class IndexPage extends React.Component {
           <Hero />
           <ClassesList />
         </div>
+        <Gym />
+        <Partnership />
         <Footer />
       </Fragment>
     );

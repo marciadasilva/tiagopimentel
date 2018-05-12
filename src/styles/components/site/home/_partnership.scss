@@ -1,0 +1,78 @@
+.partnership {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5rem 0;
+  padding: 8rem 0;
+  width: 100vw;
+}
+
+.partnership__name {
+  color: #edb19a;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.partnership__title {
+  color: #f4f4f4;
+  font-size: 1.3rem;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.partnership__icon {
+  color: #edb19a;
+  font-size: 1.3rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.partnership__list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+}
+
+.partnership__item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 28rem;
+}
+
+.partnership__image {
+  height: 25rem;
+  width: 100%;
+}
+
+.p-image1 {
+  background: url('/images/p-image1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-image2 {
+  background: url('/images/p-image2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-image3 {
+  background: url('/images/p-image3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.partnership__description {
+  font-family: $text-font;
+  font-size: 1.1rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+}
