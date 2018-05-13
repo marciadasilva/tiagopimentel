@@ -5,6 +5,7 @@ import Hero from './home/Hero';
 import ClassesList from './home/ClassesList';
 import Gym from './home/Gym';
 import Partnership from './home/Partnership';
+import Gallery from './home/Gallery';
 
 class IndexPage extends React.Component {
   componentDidMount() {
@@ -20,6 +21,7 @@ class IndexPage extends React.Component {
         </div>
         <Gym />
         <Partnership />
+        <Gallery />
         <Footer />
       </Fragment>
     );
