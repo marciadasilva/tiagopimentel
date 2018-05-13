@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <div className="hero-grid">
+    <section className="hero-grid">
       <div className="hero">
         <div className="hero__text">
           <h2 className="hero__title">Tiago Pimentel</h2>
@@ -28,7 +28,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

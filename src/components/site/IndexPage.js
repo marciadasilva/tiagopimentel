@@ -6,6 +6,8 @@ import ClassesList from './home/ClassesList';
 import Gym from './home/Gym';
 import Partnership from './home/Partnership';
 import Gallery from './home/Gallery';
+import PriceList from './home/PriceList';
+import Schedule from './home/Schedule';
 
 class IndexPage extends React.Component {
   componentDidMount() {
@@ -14,14 +16,16 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Fragment>
-        <div className="grid-hero">
+        <section className="grid-hero">
           <Header />
           <Hero />
           <ClassesList />
-        </div>
+        </section>
         <Gym />
         <Partnership />
         <Gallery />
+        <PriceList />
+        <Schedule />
         <Footer />
       </Fragment>
     );

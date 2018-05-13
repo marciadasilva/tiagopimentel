@@ -1,0 +1,47 @@
+.schedule {
+  align-items: center;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+  width: 100vw;
+}
+
+.schedule__container {
+  width: 95vw;
+  @media (min-width: $desktop-breakpoint) {
+    width: 85vw;
+  }
+}
+
+.schedule__title {
+  font-family: $title-font;
+  font-size: 3.8rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 4rem;
+  @media (min-width: $desktop-breakpoint) {
+    text-align: left;
+  }
+}
+
+.schedule__grid {
+  display: grid;
+  grid-template: 50px repeat(4, [row] minmax(120px, 1fr)) / repeat(6, [col] 1fr);
+}
+
+.schedule__week {
+  background-color: #242424;
+  color: #f4f4f4;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #f4f4f4;
+}
+
+.schedule__hour {
+  background-color: #ffffff;
+  color: #242424;
+  border: 0.5px solid #f4f4f4;
+}

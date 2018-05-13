@@ -3,7 +3,7 @@ import ClassesItem from './ClassesItem';
 
 const ClassesList = () => {
   return (
-    <div className="classes-grid">
+    <section className="classes-grid">
       <div className="classes">
         <span className="classes__border" />
         <div className="classes__list">
@@ -27,7 +27,7 @@ const ClassesList = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

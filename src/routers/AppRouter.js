@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import HomePage from '../components/admin/HomePage';
@@ -18,10 +18,10 @@ export const history = createHistory();
 
 const AppRouter = () => (
   <Router history={history}>
-    <div>
+    <Fragment>
       <Switch>
         <PublicRoute path="/" component={IndexPage} exact={true} />
-        {/* duplicar o de cima e fazer o novo */}
+
         <SpecialRoute path="/login" component={LoginPage} />
         <PrivateRoute path="/admin" component={HomePage} exact={true} />
 
@@ -47,7 +47,7 @@ const AppRouter = () => (
         />
         <Route component={NotFoundPage} />
       </Switch>
-    </div>
+    </Fragment>
   </Router>
 );
 

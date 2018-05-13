@@ -1,0 +1,130 @@
+.price-list {
+  align-items: center;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 0;
+  width: 100vw;
+}
+
+.price-list__container {
+  width: 95vw;
+  @media (min-width: $desktop-breakpoint) {
+    width: 85vw;
+  }
+}
+
+.price-list__title {
+  font-family: $title-font;
+  font-size: 3.8rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  @media (min-width: $desktop-breakpoint) {
+    text-align: left;
+  }
+}
+
+.price-list__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media (min-width: $desktop-breakpoint) {
+    justify-content: space-around;
+  }
+}
+
+.price-list__item {
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 80%;
+  // flex-wrap: wrap;
+  margin: 2rem 0;
+  min-width: 20rem;
+  @media (min-width: $tablet-breakpoint) {
+    flex-basis: 55%;
+  }
+  @media (min-width: $desktop-breakpoint) {
+    flex-basis: 30%;
+    min-width: 35rem;
+  }
+}
+
+.price-list__item > *:nth-child(2) {
+  flex-grow: 1;
+}
+
+.price-list__overlay {
+  background-color: #242424;
+}
+
+.price-list__category {
+  background-color: #242424;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #ffffff;
+  font-family: $title-font;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 4rem;
+  text-transform: uppercase;
+}
+
+.price-list__category-img1 {
+  background: url('/images/price1.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.price-list__category-img2 {
+  background: url('/images/price2.jpg');
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.price-list__category-img3 {
+  background: url('/images/price3.jpg');
+  background-position-x: right;
+  background-position-y: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.price-list__list {
+  padding: 1rem 0 0 0;
+  text-align: center;
+}
+
+.price-list__features {
+  border-bottom: 1px solid #f4f4f4;
+  padding: 1rem 0;
+  font-family: $text-font;
+
+  p {
+    margin: 2rem 4rem 4rem;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
+
+.price-list__button {
+  margin: 0 auto;
+  padding: 3rem 0;
+
+  .button__site {
+    color: #242424;
+    font-family: $text-font;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+  }
+}

@@ -6,7 +6,7 @@ import selectImages from '../../../selectors/images';
 class Gallery extends React.Component {
   render() {
     return (
-      <div className="gallery">
+      <section className="gallery">
         <span className="gallery__name">Galeria</span>
         <h3 className="gallery__title">Veja nossas fotos</h3>
         <span className="gallery__icon">----------</span>
@@ -37,7 +37,7 @@ class Gallery extends React.Component {
             Ver mais
           </Link>
         </div>
-      </div>
+      </section>
     );
   }
 }

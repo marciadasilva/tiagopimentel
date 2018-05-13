@@ -43,7 +43,9 @@
   height: 25rem;
   margin: 0;
   margin-bottom: 2rem;
-  width: 50rem;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
   @media (min-width: $tablet-breakpoint) {
     height: 35rem;
     width: 50rem;

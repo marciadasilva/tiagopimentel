@@ -2,7 +2,7 @@ import React from 'react';
 
 const Gym = () => {
   return (
-    <div className="gym">
+    <section className="gym">
       <div className="gym__list">
         <div className="gym__img gym__img--1" />
         <div className="gym__text">
@@ -29,7 +29,7 @@ const Gym = () => {
         </div>
         <div className="gym__img gym__img--2" />
       </div>
-    </div>
+    </section>
   );
 };
 
