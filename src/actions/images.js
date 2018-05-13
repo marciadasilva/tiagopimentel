@@ -1,76 +1,67 @@
 import database, { storage } from '../firebase/firebase';
 import firebase from 'firebase';
 
-export const addProduct = product => ({
-  type: 'ADD_PRODUCT',
-  product
+export const addImage = image => ({
+  type: 'ADD_IMAGE',
+  image
 });
 
-export const startAddProduct = (productData = {}) => {
+export const startAddImage = (imageData = {}) => {
   return (dispatch, getState) => {
     const {
-      category_id = '',
-      name = '',
       description = '',
-      image = '',
-      size = '',
-      price_sell = 0,
-      price_buy = 0,
-      amount = 0,
+      category = '',
+      imageFile = '',
       createdAt = 0
-    } = productData;
-    const product = {
-      category_id,
-      name,
+    } = imageData;
+
+    const image = {
       description,
-      image,
-      size,
-      price_sell,
-      price_buy,
-      amount,
+      category,
+      imageFile,
       createdAt
     };
 
     return database
-      .ref(`products`)
-      .push(product)
+      .ref(`images`)
+      .push(image)
       .then(ref => {
         dispatch(
-          addProduct({
+          addImage({
             id: ref.key,
-            ...product
+            ...image
           })
         );
       });
   };
 };
 
-export const removeProduct = ({ id } = {}) => ({
-  type: 'REMOVE_PRODUCT',
+export const removeImage = ({ id } = {}) => ({
+  type: 'REMOVE_IMAGE',
   id
 });
 
-const removeProductFirebase = async (id, dispatch) => {
-  let removed = await removeImage(id);
+const removeImageFirebase = async (id, dispatch) => {
+  let removed = await removeImageFile(id);
   return database
-    .ref(`products/${id}`)
+    .ref(`images/${id}`)
     .remove()
     .then(() => {
-      dispatch(removeProduct({ id }));
+      dispatch(removeImage({ id }));
     });
 };
 
-const removeImage = id => {
+const removeImageFile = id => {
   let url = null;
   const imageToRemove = database
-    .ref(`products/${id}/image`)
+    .ref(`images/${id}/imageFile`)
     .once('value')
     .then(snapshot => {
       url = firebase.storage().refFromURL(snapshot.val());
       url
         .delete()
         .then(() => {
-          console.log('deleted');
+          // console.log('deleted');
         })
         .catch(error => {
           console.log('error: ' + error);
@@ -79,19 +70,19 @@ const removeImage = id => {
   return imageToRemove;
 };
 
-export const startRemoveProduct = ({ id } = {}) => {
+export const startRemoveImage = ({ id } = {}) => {
   return (dispatch, getState) => {
-    return removeProductFirebase(id, dispatch);
+    return removeImageFirebase(id, dispatch);
   };
 };
 
-export const editProduct = (id, updates) => ({
-  type: 'EDIT_PRODUCT',
+export const editImage = (id, updates) => ({
+  type: 'EDIT_IMAGE',
   id,
   updates
 });
 
-export const startEditProduct = (id, updates, oldImage) => {
+export const startEditImage = (id, updates, oldImage) => {
   if (oldImage) {
     const imageToRemove = firebase.storage().refFromURL(oldImage);
     imageToRemove
@@ -105,34 +96,34 @@ export const startEditProduct = (id, updates, oldImage) => {
   }
   return (dispatch, getState) => {
     return database
-      .ref(`products/${id}`)
+      .ref(`images/${id}`)
       .update(updates)
       .then(() => {
-        dispatch(editProduct(id, updates));
+        dispatch(editImage(id, updates));
       });
   };
 };
 
-export const setProducts = products => ({
-  type: 'SET_PRODUCTS',
-  products
+export const setImages = images => ({
+  type: 'SET_IMAGES',
+  images
 });
 
-export const startSetProducts = () => {
+export const startSetImages = () => {
   return (dispatch, getState) => {
     return database
-      .ref(`products`)
+      .ref(`images`)
       .once('value')
       .then(snapshot => {
-        const products = [];
+        const images = [];
 
         snapshot.forEach(childSnapshot => {
-          products.push({
+          images.push({
             id: childSnapshot.key,
             ...childSnapshot.val()
           });
         });
-        dispatch(setProducts(products));
+        dispatch(setImages(images));
       });
   };
 };

@@ -2,12 +2,9 @@ import React from 'react';
 import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import HomePage from '../components/admin/HomePage';
-import CategoryAdminPage from '../components/admin/categories/CategoryAdminPage';
-import CategoryAddPage from '../components/admin/categories/CategoryAddPage';
-import CategoryEditPage from '../components/admin/categories/CategoryEditPage';
-import ProductAdminPage from '../components/admin/products/ProductAdminPage';
-import ProductAddPage from '../components/admin/products/ProductAddPage';
-import ProductEditPage from '../components/admin/products/ProductEditPage';
+import ImagesAdminPage from '../components/admin/images/ImagesAdminPage';
+import ImagesAddPage from '../components/admin/images/ImagesAddPage';
+import ImagesEditPage from '../components/admin/images/ImagesEditPage';
 import MessageAdminPage from '../components/admin/messages/MessageAdminPage';
 import HelpAdminPage from '../components/admin/help/HelpAdminPage';
 import IndexPage from '../components/site/IndexPage';
@@ -29,27 +26,14 @@ const AppRouter = () => (
         <PrivateRoute path="/admin" component={HomePage} exact={true} />
 
         <PrivateRoute
-          path="/admin/category"
-          component={CategoryAdminPage}
+          path="/admin/images"
+          component={ImagesAdminPage}
           exact={true}
         />
+        <PrivateRoute path="/admin/images/create" component={ImagesAddPage} />
         <PrivateRoute
-          path="/admin/category/create"
-          component={CategoryAddPage}
-        />
-        <PrivateRoute
-          path="/admin/category/edit/:id"
-          component={CategoryEditPage}
-        />
-        <PrivateRoute
-          path="/admin/product"
-          component={ProductAdminPage}
-          exact={true}
-        />
-        <PrivateRoute path="/admin/product/create" component={ProductAddPage} />
-        <PrivateRoute
-          path="/admin/product/edit/:id"
-          component={ProductEditPage}
+          path="/admin/images/edit/:id"
+          component={ImagesEditPage}
         />
         <PrivateRoute
           path="/admin/messages"

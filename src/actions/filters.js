@@ -3,25 +3,12 @@ export const setTextFilter = (text = '') => ({
   text
 });
 
-export const setCategoryFilter = (category = '') => ({
-  type: 'SET_CATEGORY_FILTER',
-  category
-});
-
 export const sortByDate = () => ({
   type: 'SORT_BY_DATE'
 });
 
-export const sortByAmount = () => ({
-  type: 'SORT_BY_AMOUNT'
-});
-
-export const sortByPrice = () => ({
-  type: 'SORT_BY_PRICE'
-});
-
-export const sortByName = () => ({
-  type: 'SORT_BY_NAME'
+export const sortByCategory = () => ({
+  type: 'SORT_BY_CATEGORY'
 });
 
 export const setStartDate = startDate => ({

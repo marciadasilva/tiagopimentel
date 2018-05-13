@@ -1,13 +1,7 @@
-.list-header {
-  background: $light-blue;
-  border: 1px solid darken($off-white, 7%);
-  color: $off-white;
-  display: flex;
-  justify-content: space-between;
-  padding: $s-size $l-size;
-}
-
 .list-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: $m-size;
   @media (min-width: $desktop-breakpoint) {
     margin-bottom: $l-size;
@@ -15,29 +9,7 @@
 }
 
 .list-item {
-  border: 1px solid darken($off-white, 7%);
-  border-top: none;
-  color: $dark-grey;
-  display: flex;
-  flex-direction: column;
-  padding: $s-size;
-  text-decoration: none;
-  transition: background $s-time ease;
-  &:hover {
-    background: $off-white;
-  }
-  @media (min-width: $desktop-breakpoint) {
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: $m-size;
-  }
-}
-
-.list-item--birthday {
-  @extend .list-item;
-  border: 1px solid darken($off-white, 7%);
-  flex-direction: column;
+  padding: 0.5rem;
 }
 
 .list-item--message {
@@ -69,6 +41,6 @@
 }
 
 .list-item__image {
-  height: 100px;
-  width: 100px;
+  height: 24rem;
+  width: 24rem;
 }

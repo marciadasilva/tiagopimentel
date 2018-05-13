@@ -12,7 +12,7 @@ export class MenuAdmin extends React.Component {
           <div className="menu__items">
             <div className="menu__header">
               <h3 className="menu__title">
-                <Link to="/">Company Name</Link>
+                <Link to="/">Tiago Pimentel</Link>
               </h3>
               <div className="menu_header--user">
                 <Link to="/admin/company">
@@ -28,23 +28,24 @@ export class MenuAdmin extends React.Component {
               to="/admin"
               className={classNames({ active: location.pathname === '/admin' })}
             >
-              <i className="fas fa-home" /> <span>Home</span>
+              <i className="fas fa-home" /> <span>Início</span>
             </Link>
             <Link
-              to="/admin/category"
+              to="/admin/images"
               className={classNames({
-                active: location.pathname === '/admin/category'
+                active: location.pathname === '/admin/images'
               })}
             >
-              <i className="far fa-list-alt" /> <span>Categories</span>
+              <i className="fas fa-camera" /> <span>Fotos</span>
             </Link>
+
             <Link
-              to="/admin/product"
+              to="/admin/videos"
               className={classNames({
-                active: location.pathname === '/admin/product'
+                active: location.pathname === '/admin/videos'
               })}
             >
-              <i className="far fa-list-alt" /> <span>Products</span>
+              <i className="fas fa-video" /> <span>Videos</span>
             </Link>
 
             <Link
@@ -54,20 +55,19 @@ export class MenuAdmin extends React.Component {
               })}
             >
               <i className="fas fa-comment-alt flip" />
-              <span>Messages</span>
+              <span>Mensagens</span>
             </Link>
-          </div>
-          <div className="menu__items">
+
             <Link
               to="/admin/help"
               className={classNames({
                 active: location.pathname === '/admin/help'
               })}
             >
-              <i className="fas fa-question-circle" /> <span>Help</span>
+              <i className="fas fa-question-circle" /> <span>Ajuda</span>
             </Link>
             <Link to="/login" onClick={this.props.startLogout}>
-              <i className="fas fa-sign-out-alt" /> <span>Logout</span>
+              <i className="fas fa-sign-out-alt" /> <span>Sair</span>
             </Link>
           </div>
         </div>

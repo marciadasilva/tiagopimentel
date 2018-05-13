@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ProductForm from './ProductForm';
-import { startAddProduct } from '../../../actions/products';
+import ImagesForm from './ImagesForm';
+import { startAddImage } from '../../../actions/images';
 import MenuAdmin from '../MenuAdmin';
 
-export class ProductAddPage extends React.Component {
+export class ImagesAddPage extends React.Component {
   onSubmit = product => {
-    this.props.startAddProduct(product);
-    this.props.history.push('/admin/product');
+    this.props.startAddImage(product);
+    this.props.history.push('/admin/images');
   };
   render() {
     return (
@@ -16,11 +16,11 @@ export class ProductAddPage extends React.Component {
         <div className="dashboard__content">
           <div className="page-header">
             <div className="content-container">
-              <h1 className="page-header__title">Add Product</h1>
+              <h1 className="page-header__title">Adicionar Imagem</h1>
             </div>
           </div>
           <div className="content-container">
-            <ProductForm onSubmit={this.onSubmit} />
+            <ImagesForm onSubmit={this.onSubmit} />
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@ export class ProductAddPage extends React.Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  startAddProduct: product => dispatch(startAddProduct(product))
+  startAddImage: image => dispatch(startAddImage(image))
 });
 
-export default connect(undefined, mapDispatchToProps)(ProductAddPage);
+export default connect(undefined, mapDispatchToProps)(ImagesAddPage);

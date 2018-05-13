@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter, { history } from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import { startSetCategories } from './actions/categories';
-import { startSetProducts } from './actions/products';
+import { startSetImages } from './actions/images';
 import { login, logout } from './actions/auth';
 import 'normalize.css/normalize.css';
 import 'animate.css/animate.css';
@@ -36,14 +35,12 @@ ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 firebase.auth().onAuthStateChanged(user => {
   if (user) {
     store.dispatch(login(user.uid));
-    store.dispatch(startSetProducts());
-    store.dispatch(startSetCategories()).then(() => {
+    store.dispatch(startSetImages()).then(() => {
       renderApp();
     });
   } else {
     store.dispatch(logout());
-    store.dispatch(startSetProducts());
-    store.dispatch(startSetCategories()).then(() => {
+    store.dispatch(startSetImages()).then(() => {
       renderApp();
     });
   }
