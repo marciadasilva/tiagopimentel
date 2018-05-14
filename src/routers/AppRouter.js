@@ -5,6 +5,9 @@ import HomePage from '../components/admin/HomePage';
 import ImagesAdminPage from '../components/admin/images/ImagesAdminPage';
 import ImagesAddPage from '../components/admin/images/ImagesAddPage';
 import ImagesEditPage from '../components/admin/images/ImagesEditPage';
+import VideosAdminPage from '../components/admin/videos/VideosAdminPage';
+import VideosAddPage from '../components/admin/videos/VideosAddPage';
+import VideosEditPage from '../components/admin/videos/VideosEditPage';
 import MessageAdminPage from '../components/admin/messages/MessageAdminPage';
 import HelpAdminPage from '../components/admin/help/HelpAdminPage';
 import IndexPage from '../components/site/IndexPage';
@@ -34,6 +37,16 @@ const AppRouter = () => (
         <PrivateRoute
           path="/admin/images/edit/:id"
           component={ImagesEditPage}
+        />
+        <PrivateRoute
+          path="/admin/videos"
+          component={VideosAdminPage}
+          exact={true}
+        />
+        <PrivateRoute path="/admin/videos/create" component={VideosAddPage} />
+        <PrivateRoute
+          path="/admin/videos/edit/:id"
+          component={VideosEditPage}
         />
         <PrivateRoute
           path="/admin/messages"

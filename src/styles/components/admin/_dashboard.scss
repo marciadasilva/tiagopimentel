@@ -1,5 +1,6 @@
 .dashboard {
   display: flex;
+  min-height: 100vh;
   @media (min-width: $desktop-breakpoint) {
     flex-direction: row;
   }
