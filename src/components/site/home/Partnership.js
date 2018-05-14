@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Partnership = () => {
   return (
@@ -10,7 +10,7 @@ const Partnership = () => {
         <div className="partnership__item">
           <div className="partnership__image p-image1" />
           <span className="partnership__name">Black King</span>
-          <span className="partnership__instructors">Macacão</span>
+          <span className="partnership__instructors">Mestre da acadêmia</span>
           <span className="partnership__description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
             possimus unde delectus. Iure, quidem, laudantium.
@@ -19,7 +19,7 @@ const Partnership = () => {
         <div className="partnership__item">
           <div className="partnership__image p-image2" />
           <span className="partnership__name">Fight Team</span>
-          <span className="partnership__instructors">Minhoquinha</span>
+          <span className="partnership__instructors">Mestre da acadêmia</span>
           <span className="partnership__description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
             possimus unde delectus. Iure, quidem, laudantium.
@@ -28,7 +28,7 @@ const Partnership = () => {
         <div className="partnership__item">
           <div className="partnership__image p-image3" />
           <span className="partnership__name">Cicero Costha</span>
-          <span className="partnership__instructors">Ortiz Cardoso</span>
+          <span className="partnership__instructors">Mestre da acadêmia</span>
           <span className="partnership__description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
             possimus unde delectus. Iure, quidem, laudantium.

@@ -43,7 +43,7 @@
 
 .gym__name {
   color: #edb19a;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
 }
 
@@ -61,7 +61,7 @@
 
 .gym__description {
   font-family: $text-font;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   padding: 0.5rem 2rem;
   text-align: center;
   @media (min-width: $desktop-breakpoint) {
@@ -76,7 +76,7 @@
 
 .gym__img--1 {
   margin-right: 0;
-  background: url('/images/academia-particular.jpg');
+  background: url("/images/academia-particular.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,7 +86,7 @@
 }
 .gym__img--2 {
   margin-left: 0;
-  background: url('/images/academia-sogi.jpg');
+  background: url("/images/academia-sogi.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

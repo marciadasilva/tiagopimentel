@@ -29,6 +29,7 @@
 .schedule__grid {
   display: grid;
   grid-template: 50px repeat(4, [row] minmax(120px, 1fr)) / repeat(6, [col] 1fr);
+  box-shadow: 0px 2px 2rem rgba(0, 0, 0, 0.1);
 }
 
 .schedule__week {
@@ -41,7 +42,36 @@
 }
 
 .schedule__hour {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   color: #242424;
-  border: 0.5px solid #f4f4f4;
+  border: 0.1px solid #e0e0e0;
+  align-items: center;
+  justify-content: center;
+
+  em {
+    font-weight: bold;
+  }
+
+  p {
+    margin: 1rem auto;
+    font-family: $text-font;
+  }
+}
+
+.schedule__active {
+  background-color: #f4f4f4;
+}
+
+.schedule__button {
+  margin: 0 auto;
+
+  .button__site {
+    color: #242424;
+    font-family: $text-font;
+    font-size: 1.5rem;
+    padding: 0.7rem 2rem;
+    border-color: #f9363d;
+  }
 }
