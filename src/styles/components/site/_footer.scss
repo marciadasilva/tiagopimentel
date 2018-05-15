@@ -1,5 +1,5 @@
 .footer {
-  display: flex;
+  // display: flex;
 }
 
 .social__wrapper {
@@ -7,7 +7,7 @@
   background: linear-gradient(to right, #ff7428, #ff363e);
   display: flex;
   justify-content: center;
-  min-height: 20rem;
+  min-height: 10rem;
   width: 100vw;
 }
 
@@ -43,5 +43,37 @@
 
 .social__link {
   color: white;
-  font-size: 2rem;
+  font-size: 5rem;
+}
+
+.footer__content {
+  background-color: #000;
+  color: #f4f4f4;
+}
+
+.footer__content--div {
+  display: flex;
+  width: 90vw;
+  padding: 5rem 15rem;
+}
+
+.footer__content--singlediv {
+  padding-right: 5rem;
+  max-width: 35rem;
+
+  h4 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}
+
+.footer__devs {
+  background-color: #000;
+  color: #f4f4f4;
+  text-align: center;
+
+  span{
+    color: #FF373D;
+  } ;
 }
