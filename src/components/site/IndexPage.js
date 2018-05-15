@@ -8,6 +8,7 @@ import Partnership from './home/Partnership';
 import Gallery from './home/Gallery';
 import PriceList from './home/PriceList';
 import Schedule from './home/Schedule';
+import Maps from './home/Maps';
 
 class IndexPage extends React.Component {
   componentDidMount() {
@@ -26,6 +27,7 @@ class IndexPage extends React.Component {
         <Gallery />
         <PriceList />
         <Schedule />
+        <Maps />
         <Footer />
       </Fragment>
     );
