@@ -48,23 +48,49 @@
 .footer__content {
   background-color: #000;
   color: #f4f4f4;
-}
-
-.footer__content--div {
   display: flex;
-  width: 90vw;
-  padding: 5rem 15rem;
+  justify-content: center;
 }
 
-.footer__content--singlediv {
-  padding-right: 5rem;
-  max-width: 35rem;
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem 0;
+  width: 90vw;
+}
 
-  h4 {
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    font-weight: 600;
+.footer__item {
+  margin-bottom: 1rem;
+  width: 75%;
+  @media (min-width: $desktop-breakpoint) {
+    width: 45%;
   }
+  @media (min-width: $desktop-breakpoint) {
+    margin-right: 0;
+    width: 23%;
+  }
+}
+
+.footer__item:not(:first-child) {
+  margin: 0;
+  @media (min-width: $desktop-breakpoint) {
+    margin: 0 1rem;
+  }
+}
+
+.footer__item:last-child {
+  margin: 0;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.footer__text {
+  padding: 1rem 1rem 1rem 0;
 }
 
 .footer__devs {

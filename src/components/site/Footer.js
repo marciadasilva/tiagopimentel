@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-// import { SocialIcon } from 'react-social-icons';
+import { Link } from 'react-router-dom';
 
 const Footer = props => (
   <footer className="footer">
@@ -31,28 +30,51 @@ const Footer = props => (
     </section>
 
     <section className="footer__content">
-      <div className="footer__content--div">
-        <div className="footer__content--singlediv">
-          <h4>Sobre</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-             Molestias repellendus ea aliquam, perferendis similique autem adipisci aliquid et vitae. Suscipit!</p>
+      <div className="footer__wrapper">
+        <div className="footer__item">
+          <h4 className="footer__title">Sobre</h4>
+          <p className="footer__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+            repellendus ea aliquam, perferendis similique autem adipisci aliquid
+            et vitae. Suscipit!
+          </p>
         </div>
-        <div className="footer__content--singlediv"><h4>Contato</h4></div>
-        <div className="footer__content--singlediv"><h4>Ultimas postagens no Instagram</h4></div>
-        <div className="footer__content--singlediv"><h4>Ultima div</h4></div>
+        <div className="footer__item">
+          <h4 className="footer__title">Contato</h4>
+          <ul className="footer__text">
+            <li>Telefone</li>
+            <li>Endereço</li>
+          </ul>
+        </div>
+        <div className="footer__item">
+          <h4 className="footer__title">Outro item</h4>
+          <p className="footer__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
+            consectetur.
+          </p>
+        </div>
+        <div className="footer__item">
+          <h4 className="footer__title">Ultima div</h4>
+          <p className="footer__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint vero
+            ex dicta ipsum laborum consectetur?
+          </p>
+        </div>
       </div>
     </section>
 
     <section className="footer__devs">
-      <p>Desenvolvido por
-      <Link to="/">
-        <span> Marcia da Silva </span>
-      </Link>
-      e
-      <Link to="/">
-        <span> Igor Haugg </span>
-      </Link>
-       2018 &copy;</p>
+      <p>
+        Desenvolvido por
+        <Link to="/">
+          <span> Marcia da Silva </span>
+        </Link>
+        e
+        <Link to="/">
+          <span> Igor Haugg </span>
+        </Link>
+        2018 &copy;
+      </p>
     </section>
   </footer>
 );
