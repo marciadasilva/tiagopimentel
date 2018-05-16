@@ -40,14 +40,14 @@ const Footer = props => (
           </p>
         </div>
         <div className="footer__item">
-          <h4 className="footer__title">Contato</h4>
+          <h4 className="footer__title">Endereço</h4>
           <ul className="footer__text">
             <li>Telefone</li>
             <li>Endereço</li>
           </ul>
         </div>
         <div className="footer__item">
-          <h4 className="footer__title">Outro item</h4>
+          <h4 className="footer__title">Contato</h4>
           <p className="footer__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
             consectetur.

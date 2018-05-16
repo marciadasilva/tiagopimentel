@@ -39,6 +39,11 @@
   letter-spacing: 1px;
   padding: 1.2rem 4rem;
   text-transform: uppercase;
+  transition: 1s;
+
+  &:hover {
+    background: linear-gradient(to right, #ff7428, #ff363e);
+  }
 }
 
 .button__site {
@@ -48,6 +53,12 @@
   color: $off-white;
   padding: 1.3rem 3rem;
   text-transform: uppercase;
+  transition: 1s;
+
+  &:hover {
+    background: rgba(255, 116, 40, .6);
+    color: #242424;
+  }
 }
 
 .button__site--margin {
