@@ -1,19 +1,17 @@
 import React from 'react';
-import MenuAdmin from '../MenuAdmin';
 
-const MessageAdminPage = () => (
+import MenuAdmin from '../MenuAdmin';
+import MessagesSummary from './MessagesSummary';
+import MessagesList from './MessagesList';
+
+const MessagesAdminPage = () => (
   <main className="dashboard">
     <MenuAdmin />
     <section className="dashboard__content">
-      <div className="help__content">
-        <img
-          className="dashboard__image-home"
-          src="/images/dashboard.jpg"
-          alt="dashboard background"
-        />
-      </div>
+      <MessagesSummary />
+      <MessagesList />
     </section>
   </main>
 );
 
-export default MessageAdminPage;
+export default MessagesAdminPage;

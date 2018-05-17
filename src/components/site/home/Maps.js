@@ -11,7 +11,8 @@ const markerStyle = {
   fontSize: '3rem',
   position: 'absolute',
   left: -5,
-  top: -30
+  top: -30,
+  zIndex: 1000
 };
 
 const Place = () => (

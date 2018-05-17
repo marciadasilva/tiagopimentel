@@ -14,15 +14,6 @@ export class MenuAdmin extends React.Component {
               <h3 className="menu__title">
                 <Link to="/">Tiago Pimentel</Link>
               </h3>
-              <div className="menu_header--user">
-                <Link to="/admin/company">
-                  <img
-                    className="button__image"
-                    src={'/images/default-user.png'}
-                  />
-                </Link>
-                <span>Tiago</span>
-              </div>
             </div>
             <Link
               to="/admin"

@@ -9,6 +9,7 @@ import Gallery from './home/Gallery';
 import PriceList from './home/PriceList';
 import Schedule from './home/Schedule';
 import Maps from './home/Maps';
+import SlideMenu from './SlideMenu';
 
 class IndexPage extends React.Component {
   componentDidMount() {
@@ -17,18 +18,26 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Fragment>
-        <section className="grid-hero">
-          <Header />
-          <Hero />
-          <ClassesList />
-        </section>
-        <Gym />
-        <Partnership />
-        <Gallery />
-        <PriceList />
-        <Schedule />
-        <Maps />
-        <Footer />
+        <div id="outer-container ">
+          <SlideMenu
+            pageWrapId={'page-wrap'}
+            outerContainerId={'outer-container'}
+          />
+          <div id="page-wrap">
+            <section className="grid-hero">
+              <Header />
+              <Hero />
+              <ClassesList />
+            </section>
+            <Gym />
+            <Partnership />
+            <Gallery />
+            <PriceList />
+            <Schedule />
+            <Maps />
+            <Footer />
+          </div>
+        </div>
       </Fragment>
     );
   }

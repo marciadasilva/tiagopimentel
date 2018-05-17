@@ -12,17 +12,20 @@
   background-color: $header_background;
   display: flex;
   height: 9rem;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 2rem;
   @media (min-width: $desktop-breakpoint) {
     padding: 0 10rem;
+  }
+  @media (min-width: 960px) {
+    justify-content: space-between;
   }
 }
 
 .header__nav {
   align-items: center;
   color: $header_color;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   font-size: 1.5rem;
   justify-content: center;
@@ -40,6 +43,9 @@
   }
   @media (min-width: $desktop-breakpoint) {
     justify-content: flex-start;
+  }
+  @media (min-width: 960px) {
+    display: flex;
   }
 }
 

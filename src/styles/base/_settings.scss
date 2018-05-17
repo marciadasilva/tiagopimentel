@@ -6,6 +6,11 @@ $dark-blue: #131925;
 $light-blue: lighten($dark-blue, 25%);
 $off-white: #f7f7f7;
 
+// Colors admin
+$black: #000000;
+$light-black: lighten($black, 25%);
+$active-black: lighten($black, 10%);
+
 // Colors site
 $header_background: #000000;
 $header_color: #f0f0f0;

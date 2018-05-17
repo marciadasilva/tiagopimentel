@@ -7,16 +7,15 @@
 }
 
 .dashboard__menu {
-  background-color: $light-blue;
-  flex: 1;
+  background-color: $light-black;
+  flex: 2;
   @media (min-width: $desktop-breakpoint) {
     min-height: 100vh;
-    // min-height: calc(100vh - 104px);
   }
 }
 
 .dashboard__content {
-  flex: 6;
+  flex: 10;
   h1 {
     text-align: center;
   }
@@ -41,8 +40,12 @@
 }
 
 .dashboard__image-home {
-  background-color: #e8cad6;
+  background: url('/images/dashboard.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
+  min-height: 60rem;
   width: 100%;
 }
 

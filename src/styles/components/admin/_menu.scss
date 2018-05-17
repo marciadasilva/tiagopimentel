@@ -14,9 +14,12 @@
     border-right: 5px solid transparent;
     color: $off-white;
     font-weight: 300;
-    padding: $s-size $s-size;
+    padding: $m-size $s-size / 2;
     text-decoration: none;
     transition: font-weight $s-time ease-in-out;
+    @media (min-width: 955px) {
+      padding: $m-size $s-size;
+    }
   }
   svg {
     margin-left: $s-size;
@@ -29,9 +32,6 @@
     font-weight: 700;
   }
   @media (min-width: $desktop-breakpoint) {
-    > * {
-      padding: $s-size 0;
-    }
     span {
       display: inline-block;
     }
@@ -39,7 +39,7 @@
 }
 
 .menu__header {
-  background-color: $dark-blue;
+  background-color: $black;
   width: 100%;
   a {
     color: inherit;
@@ -47,21 +47,11 @@
 }
 
 .menu__title {
-  border-bottom: 1px solid lighten($dark-blue, 7%);
-  padding-bottom: $s-size;
   text-align: center;
-}
-.menu_header--user {
-  align-items: center;
-  display: flex;
-  padding: $s-size;
-  span {
-    padding: 0 $s-size;
-  }
 }
 
 .active {
-  background-color: lighten($dark-blue, 7%);
+  background-color: $active-black;
   border-right: 5px solid red;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
   font-weight: 700;

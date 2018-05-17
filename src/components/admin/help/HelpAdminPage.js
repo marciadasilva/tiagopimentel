@@ -5,12 +5,7 @@ const HelpAdminPage = () => (
   <main className="dashboard">
     <MenuAdmin />
     <section className="dashboard__content">
-      <div className="help__content">
-        <img
-          className="dashboard__image-home"
-          src="/images/dashboard.jpg"
-          alt="dashboard background"
-        />
+      <div className="help__content dashboard__image-home">
         <div className="help__box">
           <h2 className="help__title">Contact</h2>
           <p className="help__email">igor-haugg@hotmail.com</p>

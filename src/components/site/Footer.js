@@ -34,31 +34,42 @@ const Footer = props => (
         <div className="footer__item">
           <h4 className="footer__title">Sobre</h4>
           <p className="footer__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-            repellendus ea aliquam, perferendis similique autem adipisci aliquid
-            et vitae. Suscipit!
+            Professor de Boxe, Muai Thay e Jiu Jitsu a X anos, na cidade de
+            Ijuí.
           </p>
         </div>
         <div className="footer__item">
           <h4 className="footer__title">Endereço</h4>
           <ul className="footer__text">
-            <li>Telefone</li>
-            <li>Endereço</li>
+            <li>
+              <i className="fas fa-angle-right" /> Marechal Mallet, 111 - Ijuí
+            </li>
+            <li>
+              <i className="fas fa-angle-right" /> Endereço Sogi, 111 - Ijuí
+            </li>
           </ul>
         </div>
         <div className="footer__item">
           <h4 className="footer__title">Contato</h4>
-          <p className="footer__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
-            consectetur.
-          </p>
+          <ul className="footer__text">
+            <li>55 65645645</li>
+          </ul>
         </div>
         <div className="footer__item">
-          <h4 className="footer__title">Ultima div</h4>
-          <p className="footer__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint vero
-            ex dicta ipsum laborum consectetur?
-          </p>
+          <h4 className="footer__title">Links</h4>
+          <ul className="footer__text">
+            <li>
+              <i className="fas fa-angle-right" /> Galeria
+            </li>
+            <li>
+              <i className="fas fa-angle-right" /> Outro Link
+            </li>
+            <li>
+              <Link to="/login" className="footer__link">
+                <i className="fas fa-angle-right" /> Login
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
