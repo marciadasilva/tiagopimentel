@@ -2,16 +2,52 @@ import React from 'react';
 
 const GalleryTitle = () => {
   return (
-    <div>
-      <h2>Fotos e Vídeos</h2>
-      <span>---------------</span>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-        sapiente ipsa, minus perferendis possimus distinctio eius. Nostrum
-        ducimus explicabo neque, dolores dignissimos ut modi nesciunt laudantium
-        et perspiciatis harum rerum.
+    <section className="gallery-page">
+      <h2 className="gallery-page__title">Fotos e Vídeos</h2>
+      <span className="gallery-page__icon">---------------</span>
+      <p className="gallery-page__description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Voluptate cum exercitationem, nostrum aliquam pariatur repudiandae at eligendi nobis qui minima.
       </p>
-    </div>
+
+      <div className="gallery-page__content">
+        <div>
+          <img
+            className="gallery-page__image"
+            src="/images/gallery1.jpg"
+            alt="Fotos e Videos"
+          />
+        </div>
+        <div>
+          <img
+            className="gallery-page__image"
+            src="/images/gallery1.jpg"
+            alt="Fotos e Videos"
+          />
+        </div>
+        <div>
+          <img
+            className="gallery-page__image"
+            src="/images/gallery1.jpg"
+            alt="Fotos e Videos"
+          />
+        </div>
+        <div>
+          <img
+            className="gallery-page__image"
+            src="/images/gallery1.jpg"
+            alt="Fotos e Videos"
+          />
+        </div>
+        <div>
+          <img
+            className="gallery-page__image"
+            src="/images/gallery1.jpg"
+            alt="Fotos e Videos"
+          />
+        </div>
+      </div>
+    </section>
   );
 };
 
