@@ -13,7 +13,7 @@ class SlideMenu extends React.Component {
         <Link to="/" className="slide-menu__item">
           <span>Início</span>
         </Link>
-        <Link to="/" className="slide-menu__item">
+        <Link to="/galeria" className="slide-menu__item">
           <span>Galeria</span>
         </Link>
         <Link to="/" className="slide-menu__item">
@@ -22,7 +22,7 @@ class SlideMenu extends React.Component {
         <Link to="/" className="slide-menu__item">
           <span>Patrocinadores</span>
         </Link>
-        <Link to="/" className="slide-menu__item">
+        <Link to="/contato" className="slide-menu__item">
           <span>Contato</span>
         </Link>
       </Menu>
