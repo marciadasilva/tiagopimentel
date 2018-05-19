@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const MessagesListItem = props => (
-  <div className="list-item">
+  <div className="list-item--message">
     <div>
       <h3 className="list-item__title">
         {props.message.name} - {props.message.email}
@@ -19,7 +19,7 @@ const MessagesListItem = props => (
       </p>
     </div>
     <button className="button" onClick={() => props.onRead(props.message)}>
-      Marcar como Lido
+      Marcar como Lida
     </button>
   </div>
 );

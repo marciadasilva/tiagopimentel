@@ -21,7 +21,7 @@ export class MessagesList extends React.Component {
         ) : (
           ''
         )}
-        <div className="list-body">
+        <div className="list-body--message">
           {this.props.messages.length === 0 ? (
             <div className="list-item list-item--message">
               <span>Nenhuma mensagem recebida</span>

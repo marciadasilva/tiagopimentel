@@ -7,8 +7,23 @@
   width: 100%;
 }
 
+.text-input-site {
+  background-color: lighten(#242424, 20%);
+  border: 1px solid #242424;
+  border-radius: 5px;
+  height: 35px;
+  font-size: $font-size-medium;
+  font-weight: 300;
+  padding: 0 $s-size / 2;
+  width: 100%;
+}
+
 .select {
   @extend .text-input;
+}
+
+.select--site {
+  @extend .text-input-site;
 }
 
 .label {
@@ -24,6 +39,13 @@
 .textarea {
   @extend .text-input;
   height: 10rem;
+  resize: vertical;
+}
+
+.textarea-site {
+  @extend .text-input-site;
+  height: 10rem;
+  padding: $s-size/2;
   resize: vertical;
 }
 

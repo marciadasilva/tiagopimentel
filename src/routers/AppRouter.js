@@ -12,6 +12,7 @@ import MessageAdminPage from '../components/admin/messages/MessageAdminPage';
 import HelpAdminPage from '../components/admin/help/HelpAdminPage';
 import IndexPage from '../components/site/IndexPage';
 import GalleryPage from '../components/site/GalleryPage';
+import ContactPage from '../components/site/ContactPage';
 import NotFoundPage from '../components/NotFoundPage';
 import LoginPage from '../components/LoginPage';
 import PrivateRoute from './PrivateRoute';
@@ -26,6 +27,7 @@ const AppRouter = () => (
       <Switch>
         <PublicRoute path="/" component={IndexPage} exact={true} />
         <PublicRoute path="/galeria" component={GalleryPage} />
+        <PublicRoute path="/contato" component={ContactPage} />
 
         <SpecialRoute path="/login" component={LoginPage} />
         <PrivateRoute path="/admin" component={HomePage} exact={true} />

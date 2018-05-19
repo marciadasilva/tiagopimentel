@@ -1,11 +1,6 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 
-const style = {
-  width: '100vw',
-  height: '75vh'
-};
-
 const markerStyle = {
   color: 'red',
   fontSize: '3rem',
@@ -222,6 +217,11 @@ export default class Map extends React.Component {
   };
 
   render() {
+    const style = {
+      width: this.props.width,
+      height: '75vh',
+      minHeight: '30rem'
+    };
     return (
       <div style={style} className="google-map">
         <GoogleMapReact

@@ -43,6 +43,12 @@ ul {
   padding: 0;
 }
 
+button,
+input,
+textarea {
+  outline: none;
+}
+
 .is-active {
   font-weight: bold;
 }

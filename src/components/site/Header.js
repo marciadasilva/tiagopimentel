@@ -9,7 +9,7 @@ const Header = props => (
           <li>Início</li>
         </Link>
         <li>~</li>
-        <Link to="/">
+        <Link to="/galeria">
           <li>Galeria</li>
         </Link>
         <li>~</li>
@@ -21,7 +21,7 @@ const Header = props => (
           <li>Patrocinadores</li>
         </Link>
         <li>~</li>
-        <Link to="/">
+        <Link to="/contato">
           <li>Contato</li>
         </Link>
       </ul>

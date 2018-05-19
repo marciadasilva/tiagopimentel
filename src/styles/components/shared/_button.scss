@@ -64,3 +64,15 @@
 .button__site--margin {
   margin-top: 2rem;
 }
+
+input:invalid {
+  box-shadow: none;
+}
+
+input:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+input:-moz-ui-invalid {
+  box-shadow: none;
+}

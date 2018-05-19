@@ -34,7 +34,7 @@ class IndexPage extends React.Component {
             <Gallery />
             <PriceList />
             <Schedule />
-            <Maps />
+            <Maps width={'100vw'} />
             <Footer />
           </div>
         </div>
