@@ -3,7 +3,7 @@ import React from 'react';
 const Partnership = () => {
   return (
     <section className="partnership" id="parceiros">
-      <span className="partnership__name">Sobre nós</span>
+      {/* <span className="partnership__name">Sobre nós</span> */}
       <h3 className="partnership__title">Quem somos e o que fazemos</h3>
       <span className="partnership__icon">----------</span>
       <div className="partnership__list">

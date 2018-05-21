@@ -29,7 +29,6 @@
 
 .gallery-page__content {
   display: grid;
-  grid-gap: 1rem;
   grid-template-columns: repeat(auto-fill, 35rem);
   margin-top: 8rem;
   justify-content: center;
@@ -41,7 +40,7 @@
   }
   @media (min-width: $desktop-breakpoint) {
     display: grid;
-    width: 80vw;
+    width: 100%;
   }
 }
 
@@ -59,4 +58,24 @@
     height: 25rem;
     width: 35rem;
   }
+}
+
+.gallery-page__video {
+  height: 25rem;
+  width: 100%;
+  @media (min-width: $tablet-breakpoint) {
+    height: 35rem;
+    width: 50rem;
+  }
+  @media (min-width: $desktop-breakpoint) {
+    height: 25rem;
+    width: 35rem;
+  }
+}
+
+.light-video {
+  display: flex;
+  height: 50vh;
+  margin: 0 auto;
+  margin-top: 25vh;
 }

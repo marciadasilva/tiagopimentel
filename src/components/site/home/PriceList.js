@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { Link } from 'react-router-dom';
 
 const PriceList = () => {
@@ -7,7 +8,11 @@ const PriceList = () => {
       <div className="price-list__container">
         <h3 className="price-list__title">Programas</h3>
         <div className="price-list__cards">
-          <div className="price-list__item">
+          <ScrollAnimation
+            className="price-list__item"
+            animateIn="fadeInUp"
+            animateOnce={true}
+          >
             <div className="price-list__category price-list__category-img1">
               Muay Thai
             </div>
@@ -28,8 +33,13 @@ const PriceList = () => {
                 <span>Contato</span>
               </Link>
             </div>
-          </div>
-          <div className="price-list__item">
+          </ScrollAnimation>
+          <ScrollAnimation
+            className="price-list__item"
+            animateIn="fadeInUp"
+            animateOnce={true}
+            delay={250}
+          >
             <div className="price-list__category price-list__category-img2">
               Jiu Jitsu
             </div>
@@ -53,8 +63,13 @@ const PriceList = () => {
                 <span>Contato</span>
               </Link>
             </div>
-          </div>
-          <div className="price-list__item">
+          </ScrollAnimation>
+          <ScrollAnimation
+            className="price-list__item"
+            animateIn="fadeInUp"
+            animateOnce={true}
+            delay={500}
+          >
             <div className="price-list__category price-list__category-img3">
               Particular
             </div>
@@ -69,7 +84,7 @@ const PriceList = () => {
                 <span>Contato</span>
               </Link>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
     </section>

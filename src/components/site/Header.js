@@ -25,7 +25,9 @@ const Header = props => (
           <li>Contato</li>
         </Link>
       </ul>
-      <div className="header__brand">Logo</div>
+      <Link to="/" className="header__brand">
+        Logo
+      </Link>
     </div>
   </header>
 );

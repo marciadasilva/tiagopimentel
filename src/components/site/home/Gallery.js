@@ -7,7 +7,7 @@ class Gallery extends React.Component {
   render() {
     return (
       <section className="gallery">
-        <span className="gallery__name">Galeria</span>
+        {/* <span className="gallery__name">Galeria</span> */}
         <h3 className="gallery__title">Veja nossas fotos</h3>
         <span className="gallery__icon">----------</span>
         <div className="gallery__list">
@@ -19,21 +19,19 @@ class Gallery extends React.Component {
             .map(image => {
               return (
                 <div key={image.id}>
-                  <Link to={`/gallery/${image.id}`}>
-                    <div className="">
-                      <img
-                        className="gallery__image"
-                        src={image.imageFile}
-                        alt=""
-                      />
-                    </div>
-                  </Link>
+                  <div className="">
+                    <img
+                      className="gallery__image"
+                      src={image.imageFile}
+                      alt=""
+                    />
+                  </div>
                 </div>
               );
             })}
         </div>
         <div>
-          <Link to="/gallery" className="button button--home">
+          <Link to="/galeria" className="button button--home">
             Ver mais
           </Link>
         </div>

@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-const getVisibleProducts = (images, { text, sortBy }) => {
+const getVisibleImages = (images, { text, sortBy }) => {
   return images
     .filter(image => {
       const textMatch =
@@ -18,4 +18,4 @@ const getVisibleProducts = (images, { text, sortBy }) => {
     });
 };
 
-export default getVisibleProducts;
+export default getVisibleImages;
