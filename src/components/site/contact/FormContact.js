@@ -58,7 +58,6 @@ export class FormContact extends React.Component {
         <input
           type="text"
           placeholder="Nome"
-          autoFocus
           className="text-input-site"
           value={this.state.name}
           onChange={this.onNameChange}

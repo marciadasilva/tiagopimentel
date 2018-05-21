@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { Link } from 'react-router-dom';
 
 const ClassesItem = props => {
@@ -10,14 +11,16 @@ const ClassesItem = props => {
   };
   return (
     <div className="classes__item" style={backgroundImage}>
-      <p className="classes__title">Aulas</p>
-      <p className="classes__name">{props.name}</p>
-      <p className="classes__description">{props.description}</p>
-      <div>
-        <Link to="/" className="button button--home">
-          {props.cta}
-        </Link>
-      </div>
+      <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+        <p className="classes__title">Aulas</p>
+        <p className="classes__name">{props.name}</p>
+        <p className="classes__description">{props.description}</p>
+        <div>
+          <Link to="/" className="button button--home">
+            {props.cta}
+          </Link>
+        </div>
+      </ScrollAnimation>
     </div>
   );
 };

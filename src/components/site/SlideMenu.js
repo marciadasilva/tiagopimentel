@@ -16,12 +16,12 @@ class SlideMenu extends React.Component {
         <Link to="/galeria" className="slide-menu__item">
           <span>Galeria</span>
         </Link>
-        <Link to="/" className="slide-menu__item">
+        <a href="#aulas" className="slide-menu__item">
           <span>Aulas</span>
-        </Link>
-        <Link to="/" className="slide-menu__item">
-          <span>Patrocinadores</span>
-        </Link>
+        </a>
+        <a href="#parceiros" className="slide-menu__item">
+          <span>Parceiros</span>
+        </a>
         <Link to="/contato" className="slide-menu__item">
           <span>Contato</span>
         </Link>

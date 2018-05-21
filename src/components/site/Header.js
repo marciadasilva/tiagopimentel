@@ -13,13 +13,13 @@ const Header = props => (
           <li>Galeria</li>
         </Link>
         <li>~</li>
-        <Link to="/">
+        <a href="#aulas">
           <li>Aulas</li>
-        </Link>
+        </a>
         <li>~</li>
-        <Link to="/">
-          <li>Patrocinadores</li>
-        </Link>
+        <a href="#parceiros">
+          <li>Parceiros</li>
+        </a>
         <li>~</li>
         <Link to="/contato">
           <li>Contato</li>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PriceList = () => {
   return (
-    <section className="price-list">
+    <section className="price-list" id="aulas">
       <div className="price-list__container">
         <h3 className="price-list__title">Programas</h3>
         <div className="price-list__cards">
