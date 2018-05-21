@@ -15,15 +15,6 @@ class GalleryContent extends React.Component {
     this.setState({ isOpen: true, selected });
   };
 
-  randomColor = () => {
-    return {
-      luminosity: 'random', //'light'
-      hue: 'random', // 'blue' 'green' random
-      format: 'rgba',
-      alpha: 1
-    };
-  };
-
   render() {
     const { isOpen, selected } = this.state;
 
@@ -50,7 +41,12 @@ class GalleryContent extends React.Component {
               <div
                 className="gallery-page__overlay-image"
                 key={item.id}
-                style={{ background: randomColor() }}
+                style={{
+                  background: randomColor({
+                    luminosity: 'light',
+                    hue: 'random'
+                  })
+                }}
               >
                 <img
                   className="gallery-page__image"
@@ -64,7 +60,12 @@ class GalleryContent extends React.Component {
               <div
                 className="gallery-page__overlay-video"
                 key={item.id}
-                style={{ background: randomColor() }}
+                style={{
+                  background: randomColor({
+                    luminosity: 'light',
+                    hue: 'random'
+                  })
+                }}
               >
                 <video
                   className="gallery-page__video"
