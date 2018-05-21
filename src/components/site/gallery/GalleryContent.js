@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Lightbox from 'lightbox-react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import randomColor from 'randomcolor';
 import { connect } from 'react-redux';
 import selectImages from '../../../selectors/images';
 import selectVideos from '../../../selectors/videos';
@@ -13,6 +14,16 @@ class GalleryContent extends React.Component {
   isOpen = selected => {
     this.setState({ isOpen: true, selected });
   };
+
+  randomColor = () => {
+    return {
+      luminosity: 'random', //'light'
+      hue: 'random', // 'blue' 'green' random
+      format: 'rgba',
+      alpha: 1
+    };
+  };
+
   render() {
     const { isOpen, selected } = this.state;
 
@@ -36,21 +47,33 @@ class GalleryContent extends React.Component {
            delay={250}*/}
           {items.map(item => {
             return item.imageFile ? (
-              <img
+              <div
+                className="gallery-page__overlay-image"
                 key={item.id}
-                className="gallery-page__image"
-                src={item.imageFile}
-                alt="Fotos e Videos"
-                onClick={() => this.isOpen(item.cont)}
-              />
+                style={{ background: randomColor() }}
+              >
+                <img
+                  className="gallery-page__image"
+                  src={item.imageFile}
+                  alt="Fotos e Videos"
+                  onClick={() => this.isOpen(item.cont)}
+                />
+                <i className="fas fa-camera fa-4x gallery-page__image-icon" />
+              </div>
             ) : (
-              <video
+              <div
+                className="gallery-page__overlay-video"
                 key={item.id}
-                className="gallery-page__video"
-                src={item.videoFile}
-                onClick={() => this.isOpen(item.cont)}
-                controls
-              />
+                style={{ background: randomColor() }}
+              >
+                <video
+                  className="gallery-page__video"
+                  src={item.videoFile}
+                  onClick={() => this.isOpen(item.cont)}
+                  controls
+                />
+                <i className="fas fa-video fa-4x gallery-page__video-icon" />
+              </div>
             );
           })}
         </div>
@@ -64,6 +87,7 @@ class GalleryContent extends React.Component {
                 <video
                   className="light-video"
                   src={images[selected].videoFile}
+                  autoPlay
                   controls
                 />
               )
