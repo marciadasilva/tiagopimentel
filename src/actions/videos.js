@@ -10,6 +10,7 @@ export const startAddVideo = (videoData = {}) => {
   return (dispatch, getState) => {
     const {
       description = '',
+      position = '',
       category = '',
       videoFile = '',
       createdAt = 0
@@ -18,6 +19,7 @@ export const startAddVideo = (videoData = {}) => {
     const video = {
       description,
       category,
+      position,
       videoFile,
       createdAt
     };

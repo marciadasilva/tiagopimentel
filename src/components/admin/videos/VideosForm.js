@@ -10,6 +10,7 @@ export class VideosForm extends React.Component {
     this.state = {
       description: props.video ? props.video.description : '',
       category: props.video ? props.video.category : 'thai',
+      position: props.video ? props.video.position : 'horizontal',
       videoFile: props.video ? props.video.videoFile : '',
       createdAt: props.video ? moment(props.video.createdAt) : moment(),
       showLoading: false,
@@ -24,6 +25,10 @@ export class VideosForm extends React.Component {
   onCategoryChange = e => {
     const category = e.target.value;
     this.setState(() => ({ category }));
+  };
+  onPositionChange = e => {
+    const position = e.target.value;
+    this.setState(() => ({ position }));
   };
   onUploadStart = () => this.setState({ showLoading: true });
   onUploadSuccess = filename => {
@@ -52,9 +57,9 @@ export class VideosForm extends React.Component {
   };
   onSubmit = e => {
     e.preventDefault();
-    if (!this.state.category || !this.state.videoFile) {
+    if (!this.state.category || !this.state.position || !this.state.videoFile) {
       this.setState(() => ({
-        error: 'Por favor, selecione uma videom e uma categoria.'
+        error: 'Por favor, selecione um video, a posição e uma categoria.'
       }));
     } else {
       this.setState(() => ({ error: '' }));
@@ -62,6 +67,7 @@ export class VideosForm extends React.Component {
         {
           description: this.state.description,
           category: this.state.category,
+          position: this.state.position,
           videoFile: this.state.videoFile,
           createdAt: this.state.createdAt.valueOf()
         },
@@ -95,6 +101,19 @@ export class VideosForm extends React.Component {
           </option>
         </select>
 
+        <select
+          className="select"
+          onChange={this.onPositionChange}
+          value={this.state.position}
+        >
+          <option key="horizontal" value="horizontal">
+            Lado
+          </option>
+          <option key="vertical" value="vertical">
+            Em pé
+          </option>
+        </select>
+
         <label className="label button">
           Selecionar video
           <FileUploader
@@ -124,6 +143,7 @@ export class VideosForm extends React.Component {
 
         <div>
           {this.state.category &&
+            this.state.position &&
             this.state.videoFile && (
               <button className="button">
                 {this.props.editForm ? 'Salvar' : 'Adicionar'}

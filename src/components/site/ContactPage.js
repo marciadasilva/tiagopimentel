@@ -6,7 +6,11 @@ import SlideMenu from './SlideMenu';
 
 class ContactPage extends React.Component {
   componentDidMount() {
+    document.title = 'Tiago Pimentel - Contato';
     window.scrollTo(0, 0);
+  }
+  componentWillUnmount() {
+    document.title = 'Tiago Pimentel';
   }
   render() {
     return (

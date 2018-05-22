@@ -43,31 +43,20 @@ class GalleryContent extends React.Component {
 </InfiniteScroll> */}
           {items.map(item => {
             return item.imageFile ? (
-              <div
-                className="gallery-page__overlay-image"
-                key={item.id}
-                style={{
-                  background: randomColor({
-                    luminosity: 'light',
-                    hue: 'random'
-                  })
-                }}
-              >
+              <div className="gallery-page__overlay-image" key={item.id}>
                 <img
                   className="gallery-page__image"
                   src={item.imageFile}
                   alt="Fotos e Videos"
                   onClick={() => this.isOpen(item.cont)}
                 />
-                <i className="fas fa-camera fa-4x gallery-page__image-icon" />
               </div>
             ) : (
               <div
-                className="gallery-page__overlay-video"
+                className={`gallery-page__overlay-video ${
+                  item.position === 'vertical' ? ' gallery-page__span-row' : ' '
+                }`}
                 key={item.id}
-                style={{
-                  background: 'transparent'
-                }}
               >
                 <video
                   className="gallery-page__video"
@@ -75,7 +64,6 @@ class GalleryContent extends React.Component {
                   onClick={() => this.isOpen(item.cont)}
                   controls
                 />
-                <i className="fas fa-video fa-4x gallery-page__video-icon" />
               </div>
             );
           })}
@@ -87,7 +75,11 @@ class GalleryContent extends React.Component {
                 images[selected].imageFile
               ) : (
                 <video
-                  className="light-video"
+                  className={`light-video ${
+                    images[selected].position === 'vertical'
+                      ? ' light-video__vertical'
+                      : ' '
+                  }`}
                   src={images[selected].videoFile}
                   autoPlay
                   controls
