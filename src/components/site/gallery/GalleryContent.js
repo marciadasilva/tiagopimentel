@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
+import InfiniteScroll from 'react-infinite-scroller';
 import Lightbox from 'lightbox-react';
-import ScrollAnimation from 'react-animate-on-scroll';
 import randomColor from 'randomcolor';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { connect } from 'react-redux';
 import selectImages from '../../../selectors/images';
 import selectVideos from '../../../selectors/videos';
@@ -32,10 +33,14 @@ class GalleryContent extends React.Component {
     return (
       <Fragment>
         <div className="gallery-page__content">
-          {/* <ScrollAnimation
-           animateIn="fadeInUp"
-           animateOnce={true}
-           delay={250}*/}
+          {/* <InfiniteScroll
+    pageStart={0}
+    loadMore={loadFunc}
+    hasMore={true || false}
+    loader={<div className="loader" key={0}>Loading ...</div>}
+>
+    {items} // <-- This is the content you want to load
+</InfiniteScroll> */}
           {items.map(item => {
             return item.imageFile ? (
               <div
@@ -61,10 +66,7 @@ class GalleryContent extends React.Component {
                 className="gallery-page__overlay-video"
                 key={item.id}
                 style={{
-                  background: randomColor({
-                    luminosity: 'light',
-                    hue: 'random'
-                  })
+                  background: 'transparent'
                 }}
               >
                 <video
@@ -78,7 +80,6 @@ class GalleryContent extends React.Component {
             );
           })}
         </div>
-        {/* </ScrollAnimation> */}
         {isOpen && (
           <Lightbox
             mainSrc={

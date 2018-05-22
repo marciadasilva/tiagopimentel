@@ -110,12 +110,16 @@ export class VideosForm extends React.Component {
 
         {this.state.showLoading && (
           <div className="loader__small">
-            <img className="loader__video" src="/videos/loader.gif" />
+            <img className="loader__image" src="/images/loader.gif" />
           </div>
         )}
 
         {this.state.videoFile && (
-          <img className="list-item__video" src={this.state.videoFile} />
+          <video
+            className="list-item__video"
+            src={this.state.videoFile}
+            controls
+          />
         )}
 
         <div>
