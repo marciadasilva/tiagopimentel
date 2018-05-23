@@ -54,12 +54,19 @@
   color: $off-white;
   padding: 1.3rem 3rem;
   text-transform: uppercase;
-  transition: 1s;
+  transition: all 0.5s ease;
 
   &:hover {
     background: rgba(255, 116, 40, 0.6);
     color: #ffffff;
   }
+}
+
+.button__site--price-list {
+  color: #242424;
+  font-family: $text-font;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
 }
 
 .button__site--margin {

@@ -13,11 +13,11 @@ const Header = props => (
           <li>Galeria</li>
         </Link>
         <li>~</li>
-        <a href="#aulas">
+        <a href="/#aulas">
           <li>Aulas</li>
         </a>
         <li>~</li>
-        <a href="#parceiros">
+        <a href="/#parceiros">
           <li>Parceiros</li>
         </a>
         <li>~</li>

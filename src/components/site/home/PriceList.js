@@ -29,7 +29,7 @@ const PriceList = () => {
               </li>
             </ul>
             <div className="button__site--margin price-list__button">
-              <Link to="/" className="button__site ">
+              <Link to="/" className="button__site button__site--price-list">
                 <span>Contato</span>
               </Link>
             </div>
@@ -59,7 +59,7 @@ const PriceList = () => {
               </li>
             </ul>
             <div className="button__site--margin price-list__button">
-              <Link to="/" className="button__site ">
+              <Link to="/" className="button__site button__site--price-list">
                 <span>Contato</span>
               </Link>
             </div>
@@ -80,7 +80,7 @@ const PriceList = () => {
               </li>
             </ul>
             <div className="button__site--margin price-list__button">
-              <Link to="/" className="button__site ">
+              <Link to="/" className="button__site button__site--price-list">
                 <span>Contato</span>
               </Link>
             </div>

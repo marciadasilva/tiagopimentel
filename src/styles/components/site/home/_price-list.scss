@@ -75,20 +75,20 @@
 }
 
 .price-list__category-img1 {
-  background: url("/images/price1.jpg");
+  background: url('/images/price1.jpg');
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .price-list__category-img2 {
-  background: url("/images/price2.jpg");
+  background: url('/images/price2.jpg');
   background-position-x: right;
   background-position-y: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .price-list__category-img3 {
-  background: url("/images/price3.jpg");
+  background: url('/images/price3.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -117,11 +117,4 @@
 .price-list__button {
   margin: 0 auto;
   padding: 3rem 0;
-
-  .button__site {
-    color: #242424;
-    font-family: $text-font;
-    font-size: 1.5rem;
-    padding: 1rem 3rem;
-  }
 }

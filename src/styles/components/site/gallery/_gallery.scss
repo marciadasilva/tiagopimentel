@@ -38,6 +38,7 @@
 
   justify-content: center;
   margin-top: 8rem;
+  overflow: hidden;
   width: 80vw;
 }
 
@@ -85,4 +86,9 @@
 .light-video__vertical {
   height: 90%;
   margin-top: 8vh;
+}
+
+.gallery-page__message {
+  margin: 0 auto;
+  margin-top: 4rem;
 }
