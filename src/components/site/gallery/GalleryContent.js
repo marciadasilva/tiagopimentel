@@ -12,7 +12,7 @@ class GalleryContent extends React.Component {
     isOpen: false,
     selected: 0,
     start: 0,
-    end: 3,
+    end: 6,
     arrayItems: Array.from({}),
     allItems: {},
     hasMore: true
@@ -30,8 +30,8 @@ class GalleryContent extends React.Component {
     this.setState({
       allItems: items,
       arrayItems: Array.from(items.slice(this.state.start, this.state.end)),
-      start: 3,
-      end: 6
+      start: 6,
+      end: 12
     });
   }
 
@@ -51,8 +51,8 @@ class GalleryContent extends React.Component {
             this.state.allItems.slice(this.state.start, this.state.end)
           )
         ),
-        start: this.state.start + 3,
-        end: this.state.end + 3
+        start: this.state.start + 6,
+        end: this.state.end + 6
       });
     }, 500);
   };
