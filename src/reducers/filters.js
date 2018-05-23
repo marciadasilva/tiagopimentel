@@ -2,6 +2,7 @@ import moment from 'moment';
 
 const filtersReducerDefaultState = {
   text: '',
+  category: '',
   sortBy: 'date',
   startDate: moment().startOf('month'),
   endDate: moment().endOf('month')
@@ -14,6 +15,11 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
         ...state,
         text: action.text
       };
+    case 'SET_CATEGORY_FILTER':
+      return {
+        ...state,
+        category: action.category
+      };
     case 'SORT_BY_CATEGORY':
       return {
         ...state,
@@ -23,6 +29,11 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
       return {
         ...state,
         sortBy: 'date'
+      };
+    case 'SORT_BY_DATE_REVERSE':
+      return {
+        ...state,
+        sortBy: 'dateReverse'
       };
     case 'SET_START_DATE':
       return {

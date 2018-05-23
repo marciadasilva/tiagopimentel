@@ -59,7 +59,18 @@ class GalleryContent extends React.Component {
 
   render() {
     const { isOpen, selected } = this.state;
-    const gallery = Array.from(this.state.arrayItems);
+    const { sortBy, category } = this.props.filters;
+    const gallery = Array.from(
+      this.state.arrayItems
+        .filter(item => {
+          return category === '' || category === 'all'
+            ? item
+            : item.category === category;
+        })
+        .map((item, i) => {
+          return { ...item, cont: i };
+        })
+    );
 
     return (
       <Fragment>
@@ -72,41 +83,52 @@ class GalleryContent extends React.Component {
               <img className="loader__image" src="/images/loader.gif" />
             </div>
           }
-          // endMessage={
-          //   <p className="gallery-page__message">
-          //     Todos as imagens e videos carregadas!
-          //   </p>
-          // }
         >
           <div className="gallery-page__content">
-            {this.state.arrayItems.map(item => {
-              return item.imageFile ? (
-                <div className="gallery-page__overlay-image" key={item.id}>
-                  <img
-                    className="gallery-page__image"
-                    src={item.imageFile}
-                    alt="Fotos e Videos"
-                    onClick={() => this.isOpen(item.cont)}
-                  />
-                </div>
-              ) : (
-                <div
-                  className={`gallery-page__overlay-video ${
-                    item.position === 'vertical'
-                      ? ' gallery-page__span-row'
-                      : ' '
-                  }`}
-                  key={item.id}
-                >
-                  <video
-                    className="gallery-page__video"
-                    src={item.videoFile}
-                    onClick={() => this.isOpen(item.cont)}
-                    controls
-                  />
-                </div>
-              );
-            })}
+            {this.state.arrayItems
+              .filter(item => {
+                return category === '' || category === 'all'
+                  ? item
+                  : item.category === category;
+              })
+              .map((item, i) => {
+                return { ...item, cont: i };
+              })
+              .map(item => {
+                return item.imageFile ? (
+                  <div className="gallery-page__overlay-image" key={item.id}>
+                    <img
+                      className="gallery-page__image"
+                      src={item.imageFile}
+                      alt="Fotos e Videos"
+                      onClick={() => this.isOpen(item.cont)}
+                    />
+                  </div>
+                ) : (
+                  <div
+                    className={`gallery-page__overlay-video ${
+                      item.position === 'vertical'
+                        ? ' gallery-page__span-row'
+                        : ' '
+                    }`}
+                    key={item.id}
+                  >
+                    <video
+                      className="gallery-page__video"
+                      src={item.videoFile}
+                      onClick={() => this.isOpen(item.cont)}
+                      controls
+                    />
+                  </div>
+                );
+              })
+              .sort((a, b) => {
+                if (sortBy === 'date') {
+                  return a.createdAt < b.createdAt ? 1 : -1;
+                } else if (sortBy === 'dateReverse') {
+                  return a.createdAt < b.createdAt ? -1 : 1;
+                }
+              })}
           </div>
         </InfiniteScroll>
         {isOpen && (
@@ -151,10 +173,13 @@ class GalleryContent extends React.Component {
   }
 }
 
-const mapStateToProps = state => ({
-  images: selectImages(state.images, state.filters),
-  videos: selectVideos(state.videos, state.filters)
-});
+const mapStateToProps = state => {
+  return {
+    images: selectImages(state.images, state.filters),
+    videos: selectVideos(state.videos, state.filters),
+    filters: state.filters
+  };
+};
 
 export default connect(mapStateToProps)(GalleryContent);
 

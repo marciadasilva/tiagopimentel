@@ -36,6 +36,7 @@
   padding: $s-size;
   text-decoration: none;
   transition: background $s-time ease;
+  width: 100%;
   &:hover {
     background: $off-white;
   }

@@ -6,7 +6,6 @@ const getVisibleImages = (images, { text, sortBy }) => {
       const textMatch =
         image.description.toLowerCase().includes(text.toLowerCase()) ||
         image.category.toLowerCase().includes(text.toLowerCase());
-
       return textMatch;
     })
     .sort((a, b) => {
