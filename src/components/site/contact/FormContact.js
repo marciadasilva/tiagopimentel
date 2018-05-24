@@ -83,6 +83,7 @@ export class FormContact extends React.Component {
           className="textarea-site"
           value={this.state.messageText}
           onChange={this.onMessageChange}
+          rows="10"
           required
         />
 
