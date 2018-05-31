@@ -73,11 +73,11 @@ class JiuJitsu extends React.Component {
               <h3>Últimos treinos</h3>
               <div className="classes-page__gallery">
                 {this.props.images
+                  .filter(image => image.category === 'jiujitsu')
                   .slice(
                     0,
                     this.props.images.length >= 4 ? 4 : this.props.images.length
                   )
-                  .filter(image => image.category === 'jiujitsu')
                   .map(image => {
                     return (
                       <div key={image.id}>
