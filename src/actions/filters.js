@@ -8,6 +8,11 @@ export const setCategoryFilter = (category = '') => ({
   category
 });
 
+export const setVisualizationFilter = (visualization = '') => ({
+  type: 'SET_VISUALIZATION_FILTER',
+  visualization
+});
+
 export const sortByDate = () => ({
   type: 'SORT_BY_DATE'
 });

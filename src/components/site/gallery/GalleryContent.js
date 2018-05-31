@@ -59,13 +59,20 @@ class GalleryContent extends React.Component {
 
   render() {
     const { isOpen, selected } = this.state;
-    const { sortBy, category } = this.props.filters;
+    const { sortBy, category, visualization } = this.props.filters;
     const gallery = Array.from(
       this.state.arrayItems
         .filter(item => {
           return category === '' || category === 'all'
             ? item
             : item.category === category;
+        })
+        .filter(item => {
+          return visualization === '' || visualization === 'all'
+            ? item
+            : visualization === 'images'
+              ? item.imageFile && item
+              : item.videoFile && item;
         })
         .map((item, i) => {
           return { ...item, cont: i };
@@ -90,6 +97,13 @@ class GalleryContent extends React.Component {
                 return category === '' || category === 'all'
                   ? item
                   : item.category === category;
+              })
+              .filter(item => {
+                return visualization === '' || visualization === 'all'
+                  ? item
+                  : visualization === 'images'
+                    ? item.imageFile && item
+                    : item.videoFile && item;
               })
               .map((item, i) => {
                 return { ...item, cont: i };

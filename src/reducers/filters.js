@@ -3,6 +3,7 @@ import moment from 'moment';
 const filtersReducerDefaultState = {
   text: '',
   category: '',
+  visualization: '',
   sortBy: 'date',
   startDate: moment().startOf('month'),
   endDate: moment().endOf('month')
@@ -19,6 +20,11 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
       return {
         ...state,
         category: action.category
+      };
+    case 'SET_VISUALIZATION_FILTER':
+      return {
+        ...state,
+        visualization: action.visualization
       };
     case 'SORT_BY_CATEGORY':
       return {

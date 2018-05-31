@@ -4,14 +4,17 @@ import { connect } from 'react-redux';
 import {
   sortByDate,
   sortByDateReverse,
-  setCategoryFilter
+  setCategoryFilter,
+  setVisualizationFilter
 } from '../../../actions/filters';
 
 export class GalleryFilters extends React.Component {
   state = {
     filter: 'default',
-    category: 'default'
+    category: 'default',
+    visualization: 'default'
   };
+
   onSortChange = e => {
     this.setState({
       filter: e.target.value
@@ -24,12 +27,22 @@ export class GalleryFilters extends React.Component {
       return;
     }
   };
+
   onCategoryChange = e => {
     this.setState({
       category: e.target.value
     });
     if (e.target.value !== 'default') {
       this.props.setCategoryFilter(e.target.value);
+    }
+  };
+
+  onVisualizationChange = e => {
+    this.setState({
+      visualization: e.target.value
+    });
+    if (e.target.value !== 'default') {
+      this.props.setVisualizationFilter(e.target.value);
     }
   };
 
@@ -63,6 +76,20 @@ export class GalleryFilters extends React.Component {
             <option value="all">Todas</option>
           </select>
         </div>
+        <div className="input-group__item--site">
+          <select
+            className="select--site"
+            onChange={this.onVisualizationChange}
+            value={this.state.visualization}
+          >
+            <option value="default" disabled>
+              Visualizar por
+            </option>
+            <option value="images">Fotos</option>
+            <option value="videos">Videos</option>
+            <option value="all">Todos</option>
+          </select>
+        </div>
       </div>
     );
   }
@@ -75,7 +102,9 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   sortByDate: () => dispatch(sortByDate()),
   sortByDateReverse: () => dispatch(sortByDateReverse()),
-  setCategoryFilter: category => dispatch(setCategoryFilter(category))
+  setCategoryFilter: category => dispatch(setCategoryFilter(category)),
+  setVisualizationFilter: visualization =>
+    dispatch(setVisualizationFilter(visualization))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(GalleryFilters);
