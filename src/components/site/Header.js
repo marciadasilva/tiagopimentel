@@ -22,13 +22,21 @@ const Header = props => (
           <li className="header__nav--item">Galeria</li>
         </NavLink>
         <li>~</li>
-        <a className="header__nav-hover" href="/#programas">
+        <NavLink
+          className="header__nav-hover"
+          to="/programas"
+          activeClassName="header__nav-selected"
+        >
           <li className="header__nav--item">Programas</li>
-        </a>
+        </NavLink>
         <li>~</li>
-        <a className="header__nav-hover" href="/#cronograma">
+        <NavLink
+          className="header__nav-hover"
+          to="/cronograma"
+          activeClassName="header__nav-selected"
+        >
           <li className="header__nav--item">Cronograma</li>
-        </a>
+        </NavLink>
         <li>~</li>
         <NavLink
           className="header__nav-hover"
