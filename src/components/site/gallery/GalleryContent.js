@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react';
-import InfiniteScroll from 'react-infinite-scroll-component';
-import Lightbox from 'lightbox-react';
-import randomColor from 'randomcolor';
-import ScrollAnimation from 'react-animate-on-scroll';
-import { connect } from 'react-redux';
-import selectImages from '../../../selectors/images';
-import selectVideos from '../../../selectors/videos';
+import React, { Fragment } from "react";
+import InfiniteScroll from "react-infinite-scroll-component";
+import Lightbox from "lightbox-react";
+import randomColor from "randomcolor";
+import ScrollAnimation from "react-animate-on-scroll";
+import { connect } from "react-redux";
+import selectImages from "../../../selectors/images";
+import selectVideos from "../../../selectors/videos";
 
 class GalleryContent extends React.Component {
   state = {
@@ -63,7 +63,7 @@ class GalleryContent extends React.Component {
     const gallery = Array.from(
       this.state.arrayItems
         .filter(item => {
-          return category === '' || category === 'all'
+          return category === "" || category === "all"
             ? item
             : item.category === category;
         })
@@ -87,7 +87,7 @@ class GalleryContent extends React.Component {
           <div className="gallery-page__content">
             {this.state.arrayItems
               .filter(item => {
-                return category === '' || category === 'all'
+                return category === "" || category === "all"
                   ? item
                   : item.category === category;
               })
@@ -107,9 +107,9 @@ class GalleryContent extends React.Component {
                 ) : (
                   <div
                     className={`gallery-page__overlay-video ${
-                      item.position === 'vertical'
-                        ? ' gallery-page__span-row'
-                        : ' '
+                      item.position === "vertical"
+                        ? " gallery-page__span-row"
+                        : " "
                     }`}
                     key={item.id}
                   >
@@ -123,9 +123,9 @@ class GalleryContent extends React.Component {
                 );
               })
               .sort((a, b) => {
-                if (sortBy === 'date') {
+                if (sortBy === "date") {
                   return a.createdAt < b.createdAt ? 1 : -1;
-                } else if (sortBy === 'dateReverse') {
+                } else if (sortBy === "dateReverse") {
                   return a.createdAt < b.createdAt ? -1 : 1;
                 }
               })}
@@ -139,9 +139,9 @@ class GalleryContent extends React.Component {
               ) : (
                 <video
                   className={`light-video ${
-                    gallery[selected].position === 'vertical'
-                      ? ' light-video__vertical'
-                      : ' '
+                    gallery[selected].position === "vertical"
+                      ? " light-video__vertical"
+                      : " "
                   }`}
                   src={gallery[selected].videoFile}
                   autoPlay
