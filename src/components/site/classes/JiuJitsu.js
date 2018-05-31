@@ -1,25 +1,25 @@
-import React from "react";
-import Header from "../Header";
-import Footer from "../Footer";
-import SlideMenu from "../SlideMenu";
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
-import selectImages from "../../../selectors/images";
+import React from 'react';
+import Header from '../Header';
+import Footer from '../Footer';
+import SlideMenu from '../SlideMenu';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import selectImages from '../../../selectors/images';
 
 class JiuJitsu extends React.Component {
   componentDidMount() {
-    document.title = "Tiago Pimentel - JiuJitsu";
+    document.title = 'Tiago Pimentel - JiuJitsu';
     window.scrollTo(0, 0);
   }
   componentWillUnmount() {
-    document.title = "Tiago Pimentel";
+    document.title = 'Tiago Pimentel';
   }
   render() {
     return (
       <div id="outer-container ">
         <SlideMenu
-          pageWrapId={"page-wrap"}
-          outerContainerId={"outer-container"}
+          pageWrapId={'page-wrap'}
+          outerContainerId={'outer-container'}
         />
         <div id="page-wrap">
           <Header />
@@ -69,15 +69,15 @@ class JiuJitsu extends React.Component {
               </p>
             </div>
 
-            <section>
+            <section className="classes-page__gallery-list">
               <h3>Últimos treinos</h3>
-              <div className="gallery__list">
+              <div className="classes-page__gallery">
                 {this.props.images
                   .slice(
                     0,
                     this.props.images.length >= 4 ? 4 : this.props.images.length
                   )
-                  .filter(image => image.category === "jiujitsu")
+                  .filter(image => image.category === 'jiujitsu')
                   .map(image => {
                     return (
                       <div key={image.id}>

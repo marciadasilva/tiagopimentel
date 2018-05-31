@@ -29,3 +29,22 @@
   max-width: 60vw;
   font-size: 1.7rem;
 }
+
+.classes-page__gallery-list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 0;
+  width: 100vw;
+}
+
+.classes-page__gallery {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 90vw;
+}
