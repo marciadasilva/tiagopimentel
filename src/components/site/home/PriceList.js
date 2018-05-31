@@ -1,10 +1,10 @@
-import React from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
-import { Link } from 'react-router-dom';
+import React from "react";
+import ScrollAnimation from "react-animate-on-scroll";
+import { Link } from "react-router-dom";
 
 const PriceList = () => {
   return (
-    <section className="price-list" id="aulas">
+    <section className="price-list" id="programas">
       <div className="price-list__container">
         <h3 className="price-list__title">Programas</h3>
         <div className="price-list__cards">

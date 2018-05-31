@@ -43,6 +43,7 @@
 }
 
 .gallery-page__overlay-video {
+  cursor: pointer;
   margin: 0 auto;
   transition: transform 0.5s ease;
   width: auto;
@@ -57,13 +58,17 @@
 
 .gallery-page__video {
   height: 100%;
+  opacity: 0.8;
   width: 100%;
+  &:hover {
+    transition: 1000ms;
+    opacity: 1;
+  }
 }
 
 .gallery-page__overlay-image {
+  cursor: pointer;
   margin: 0;
-  object-fit: cover;
-  object-position: 50% 50%;
   transition: transform 0.5s ease;
   width: auto;
   &:hover {
@@ -72,8 +77,15 @@
 }
 
 .gallery-page__image {
+  object-fit: cover;
+  object-position: 50% 50%;
   height: 100%;
+  opacity: 0.8;
   width: 100%;
+  &:hover {
+    transition: 1000ms;
+    opacity: 1;
+  }
 }
 
 .light-video {
