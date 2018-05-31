@@ -11,12 +11,12 @@ const SlideMenu = () => {
       <Link to="/galeria" className="slide-menu__item">
         <span>Galeria</span>
       </Link>
-      <a href="#aulas" className="slide-menu__item">
-        <span>Aulas</span>
-      </a>
-      <a href="#parceiros" className="slide-menu__item">
-        <span>Parceiros</span>
-      </a>
+      <Link to="/programas" className="slide-menu__item">
+        <span>Programas</span>
+      </Link>
+      <Link to="/cronograma" className="slide-menu__item">
+        <span>Cronograma</span>
+      </Link>
       <Link to="/contato" className="slide-menu__item">
         <span>Contato</span>
       </Link>
