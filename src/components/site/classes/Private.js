@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 import SlideMenu from '../SlideMenu';
+import { Link } from 'react-router-dom';
 
 class Private extends React.Component {
   componentDidMount() {
@@ -47,10 +48,12 @@ class Private extends React.Component {
               </p>
             </div>
 
-            <section>
-              <h3>Outras Aulas</h3>
-              <div>Aula de Muay Thai</div>
-              <div>Aula Particular</div>
+            <section className="classes-page__gallery-list">
+              <h3 className="classes-page__title">Outras Aulas</h3>
+              <div className="classes-page__others">
+                <Link to="/jiujitsu">JiuJitsu</Link>
+                <Link to="/muaythai">Muay Thai</Link>
+              </div>
             </section>
           </main>
           <Footer />

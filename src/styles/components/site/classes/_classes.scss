@@ -36,7 +36,6 @@
   flex-direction: column;
   justify-content: center;
   margin: 2rem 0;
-  width: 100vw;
 }
 
 .classes-page__gallery {
@@ -47,4 +46,29 @@
   justify-content: center;
   margin-top: 2rem;
   width: 90vw;
+}
+
+.classes-page__others {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+  width: 90vw;
+  > * {
+    box-shadow: 0px 1px 0.1rem rgba(0, 0, 0, 0.3);
+    color: #242424;
+    flex-basis: 85%;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    padding: 3rem 0;
+    text-align: center;
+    transition: transform 0.5s ease;
+    &:hover {
+      transform: scale(1.01);
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      flex-basis: 49%;
+    }
+  }
 }

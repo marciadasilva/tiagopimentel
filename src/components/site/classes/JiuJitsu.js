@@ -70,7 +70,7 @@ class JiuJitsu extends React.Component {
             </div>
 
             <section className="classes-page__gallery-list">
-              <h3>Últimos treinos</h3>
+              <h3 className="classes-page__title">Últimos treinos</h3>
               <div className="classes-page__gallery">
                 {this.props.images
                   .filter(image => image.category === 'jiujitsu')
@@ -98,10 +98,12 @@ class JiuJitsu extends React.Component {
                 </Link>
               </div>
             </section>
-            <section>
-              <h3>Outras Aulas</h3>
-              <div>Aula de Muay Thai</div>
-              <div>Aula Particular</div>
+            <section className="classes-page__gallery-list">
+              <h3 className="classes-page__title">Outras Aulas</h3>
+              <div className="classes-page__others">
+                <Link to="/muaythai">Muay Thai</Link>
+                <Link to="/particular">Particulares</Link>
+              </div>
             </section>
           </main>
           <Footer />

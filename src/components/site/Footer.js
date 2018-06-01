@@ -59,10 +59,24 @@ const Footer = props => (
           <h4 className="footer__title">Links</h4>
           <ul className="footer__text">
             <li>
-              <i className="fas fa-angle-right" /> Galeria
+              <Link to="/" className="footer__link">
+                <i className="fas fa-angle-right" /> Início
+              </Link>
             </li>
             <li>
-              <i className="fas fa-angle-right" /> Outro Link
+              <Link to="/galeria" className="footer__link">
+                <i className="fas fa-angle-right" /> Galeria
+              </Link>
+            </li>
+            <li>
+              <Link to="/programas" className="footer__link">
+                <i className="fas fa-angle-right" /> Programas
+              </Link>
+            </li>
+            <li>
+              <Link to="/cronograma" className="footer__link">
+                <i className="fas fa-angle-right" /> Cronograma
+              </Link>
             </li>
             <li>
               <Link to="/login" className="footer__link">
