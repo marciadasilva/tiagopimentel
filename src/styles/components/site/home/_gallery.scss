@@ -1,18 +1,21 @@
 .gallery {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  background: url('/images/bg-gallery.png');
+  background: url("/images/bg-gallery.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 100vw;
   padding: 8rem 0;
 }
-
-// .gallery__name {
-//   color: #edb19a;
-//   font-size: 1.1rem;
-//   text-transform: uppercase;
-// }
 
 .gallery__title {
   color: #242424;
@@ -29,10 +32,20 @@
 }
 
 .gallery__list {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 2rem;
   // padding: 0 5rem;
@@ -43,7 +56,9 @@
   height: 25rem;
   margin: 0;
   margin-bottom: 2rem;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: 50% 50%;
   object-position: 50% 50%;
   width: 100%;
   @media (min-width: $tablet-breakpoint) {
@@ -56,31 +71,3 @@
     width: 25rem;
   }
 }
-
-// .gallery-img1 {
-//   background: url('/images/gallery1.jpg');
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-//
-// .gallery-img2 {
-//   background: url('/images/gallery2.jpg');
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-//
-// .gallery-img3 {
-//   background: url('/images/gallery3.jpg');
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-//
-// .gallery-img4 {
-//   background: url('/images/gallery4.jpg');
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }

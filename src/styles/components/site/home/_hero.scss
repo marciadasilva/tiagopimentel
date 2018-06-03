@@ -1,11 +1,13 @@
 .hero-grid {
-  grid-column: 1 / -1;
-  grid-row: 1 / -2;
-  margin-top: 5rem;
+  @supports (display: grid) {
+    grid-column: 1 / -1;
+    grid-row: 1 / -2;
+    margin-top: 5rem;
+  }
 }
 
 .hero {
-  background: url('/images/hero.jpg');
+  background: url("/images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -20,8 +22,14 @@
 
 .hero__text {
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 5rem 0;
   @media (min-width: $desktop-breakpoint) {

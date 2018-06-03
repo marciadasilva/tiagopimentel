@@ -1,19 +1,22 @@
 .partnership {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #0f0c0d;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 5rem 0 0;
   padding: 8rem 0;
   width: 100vw;
 }
-
-// .partnership__name {
-//   color: #edb19a;
-//   font-size: 1.1rem;
-//   text-transform: uppercase;
-// }
 
 .partnership__title {
   color: #f4f4f4;
@@ -38,17 +41,33 @@
 }
 
 .partnership__list {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 100vw;
 }
 
 .partnership__item {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 28rem;
   margin: 1rem;
@@ -61,21 +80,21 @@
 }
 
 .p-image1 {
-  background: url('/images/p-image1.png');
+  background: url("/images/p-image1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .p-image2 {
-  background: url('/images/p-image2.png');
+  background: url("/images/p-image2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .p-image3 {
-  background: url('/images/p-image3.png');
+  background: url("/images/p-image3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

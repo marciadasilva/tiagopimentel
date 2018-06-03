@@ -34,18 +34,18 @@ $desktop-breakpoint: 45rem;
 $tablet-breakpoint: 35rem;
 // Animation
 $s-time: 0.2s;
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Mr+De+Haviland');
-@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700');
+
+@import url("https://fonts.googleapis.com/css?family=Mr+De+Haviland");
+@import url("https://fonts.googleapis.com/css?family=Alegreya:400,700");
 
 @font-face {
-  font-family: 'Myriad Pro Regular';
-  src: url('/fonts/MyriadProRegular.ttf');
+  font-family: "Myriad Pro Regular";
+  src: url("/fonts/MyriadProRegular.ttf");
 }
 @font-face {
-  font-family: 'Proxima Nova';
-  src: url('/fonts/ProximaNova.ttf');
+  font-family: "Proxima Nova";
+  src: url("/fonts/ProximaNova.ttf");
 }
 
-$title-font: 'Myriad Pro Regular', serif;
-$text-font: 'Proxima Nova', serif;
+$title-font: "Myriad Pro Regular", serif;
+$text-font: "Proxima Nova", serif;

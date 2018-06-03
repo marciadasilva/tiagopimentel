@@ -1,7 +1,16 @@
 .contact {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding: 8rem 0 0 0;
   width: 100vw;
@@ -32,19 +41,30 @@
 }
 
 .contact__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 100vw;
 }
 
 .contact__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   min-height: 50rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 5rem;
   width: 90vw;
   @media (min-width: $desktop-breakpoint) {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 }
@@ -52,21 +72,32 @@
 .contact__map,
 .contact__info,
 .contact__info2 {
+  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   height: 75vh;
   min-height: 30rem;
   margin-bottom: 1rem;
   @media (min-width: $desktop-breakpoint) {
+    -ms-flex-preferred-size: 32%;
     flex-basis: 32%;
     margin-bottom: 0;
   }
 }
 
 .contact__info {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #242424;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-right: 0;
   @media (min-width: $desktop-breakpoint) {
@@ -98,10 +129,19 @@
 }
 
 .contact__info2 {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-left: 0;
   @media (min-width: $desktop-breakpoint) {
@@ -110,13 +150,20 @@
 }
 
 .contact__group2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   min-height: 30rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 0;
   width: 90vw;
   @media (min-width: $desktop-breakpoint) {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 5rem;
   }
@@ -124,14 +171,25 @@
 
 .contact__form,
 .contact__aside-form {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 1rem;
   padding: 0 1rem;
   @media (min-width: $desktop-breakpoint) {
+    -ms-flex-preferred-size: 45%;
     flex-basis: 45%;
     margin-bottom: 0;
   }
@@ -142,6 +200,8 @@
 }
 
 .contact__aside-form {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1rem;
 }
@@ -163,6 +223,8 @@
 }
 
 .contact__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -178,6 +240,8 @@
   color: #cb372c;
   display: block;
   font-size: 3rem;
+  -webkit-transition: background-color 0.4s ease, color 0.4s ease;
+  -o-transition: background-color 0.4s ease, color 0.4s ease;
   transition: background-color 0.4s ease, color 0.4s ease;
   &:hover {
     background-color: #cb372c;

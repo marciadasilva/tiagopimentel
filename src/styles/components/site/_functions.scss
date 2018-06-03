@@ -4,9 +4,13 @@
 }
 
 .grid-hero {
-  display: grid;
-  grid-template:
-    repeat(6, [row] minmax(120px, 1fr)) / 100px repeat(4, [col] 1fr)
-    100px;
-  grid-gap: 20px;
+  display: block;
+  @supports (display: grid) {
+    display: -ms-grid;
+    display: grid;
+    grid-template:
+      repeat(6, [row] minmax(120px, 1fr)) / 100px repeat(4, [col] 1fr)
+      100px;
+    grid-gap: 20px;
+  }
 }

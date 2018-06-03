@@ -17,7 +17,11 @@
 }
 
 .button__profile {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -40,6 +44,8 @@
   letter-spacing: 1px;
   padding: 1.2rem 4rem;
   text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 
   &:hover {
@@ -54,6 +60,8 @@
   color: $off-white;
   padding: 1.3rem 3rem;
   text-transform: uppercase;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 
   &:hover {
@@ -74,6 +82,7 @@
 }
 
 input:invalid {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
