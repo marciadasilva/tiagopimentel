@@ -10,7 +10,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 8rem 0;
+  padding: 8rem 0 0;
   width: 100vw;
 }
 
@@ -59,7 +59,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   -ms-flex-preferred-size: 80%;
-  flex-basis: 80%;
+  flex-basis: 98%;
   // flex-wrap: wrap;
   margin: 2rem 0;
   min-width: 20rem;

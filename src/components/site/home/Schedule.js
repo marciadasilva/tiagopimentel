@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Schedule = () => {
   return (
-    <section className="schedule">
+    <section className="schedule" id="horarios">
       <div className="schedule__container">
         <h3 className="schedule__title">Cronograma</h3>
         <div className="schedule__flex">

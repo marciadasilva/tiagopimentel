@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -22,9 +22,9 @@ const Hero = () => {
             </p>
           </div>
           <div className="button__site--margin">
-            <Link to="/" className="button__site">
+            <a href="#horarios" className="button__site">
               <span>Horários</span>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

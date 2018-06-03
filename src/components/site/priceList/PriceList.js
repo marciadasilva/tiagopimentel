@@ -1,27 +1,28 @@
-import React from 'react';
-import Header from '../Header';
-import Footer from '../Footer';
-import SlideMenu from '../SlideMenu';
+import React from "react";
+import Header from "../Header";
+import Footer from "../Footer";
+import SlideMenu from "../SlideMenu";
+import PriceListComponent from "../home/PriceList";
 
 class PriceList extends React.Component {
   componentDidMount() {
-    document.title = 'Tiago Pimentel - Contato';
+    document.title = "Tiago Pimentel - Preços";
     window.scrollTo(0, 0);
   }
   componentWillUnmount() {
-    document.title = 'Tiago Pimentel';
+    document.title = "Tiago Pimentel";
   }
   render() {
     return (
       <div id="outer-container ">
         <SlideMenu
-          pageWrapId={'page-wrap'}
-          outerContainerId={'outer-container'}
+          pageWrapId={"page-wrap"}
+          outerContainerId={"outer-container"}
         />
         <div id="page-wrap">
           <Header />
           <main className="price-list-page">
-            Página com os cartões de preços
+            <PriceListComponent />
           </main>
           <Footer />
         </div>
