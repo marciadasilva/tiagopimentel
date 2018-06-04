@@ -12,7 +12,10 @@
       repeat(6, [row] minmax(120px, 1fr))/0.7rem repeat(4, [col] 1fr)
       0.7rem;
   }
-  @media (min-width: $desktop-breakpoint) {
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .grid-hero {
     @supports (display: grid) {
       grid-template:
         repeat(6, [row] minmax(120px, 1fr)) / 100px repeat(4, [col] 1fr)
