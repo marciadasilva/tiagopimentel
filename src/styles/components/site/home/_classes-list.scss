@@ -15,7 +15,7 @@
   }
 }
 
-@media (min-width: 871px) {
+@media (min-width: 872px) {
   .classes-grid {
     @supports (display: grid) {
       grid-row: row 4 / -1;
@@ -100,7 +100,7 @@
     flex-basis: 100%;
   }
 
-  @media (min-width: 871px) {
+  @media (min-width: 872px) {
     padding: 4rem 4rem 6rem;
     -ms-flex-preferred-size: 33.33%;
     flex-basis: 33.33%;
