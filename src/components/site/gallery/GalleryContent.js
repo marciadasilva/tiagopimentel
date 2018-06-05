@@ -4,6 +4,15 @@ import Lightbox from 'lightbox-react';
 import randomColor from 'randomcolor';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { connect } from 'react-redux';
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  WhatsappShareButton,
+  WhatsappIcon
+} from 'react-share';
+
 import selectImages from '../../../selectors/images';
 import selectVideos from '../../../selectors/videos';
 
@@ -117,6 +126,38 @@ class GalleryContent extends React.Component {
                       alt="Fotos e Videos"
                       onClick={() => this.isOpen(item.cont)}
                     />
+                    <div className="gallery-page__social">
+                      <span>
+                        <TwitterShareButton
+                          url={`http://tiago-pimentel.firebaseapp.com/galeria/${
+                            item.id
+                          }`}
+                          quote={'Novo video postado!'}
+                        >
+                          <TwitterIcon size={54} round />
+                        </TwitterShareButton>
+                      </span>
+                      <span>
+                        <FacebookShareButton
+                          url={`http://tiago-pimentel.firebaseapp.com/galeria/${
+                            item.id
+                          }`}
+                          quote={'Novo video postado!'}
+                        >
+                          <FacebookIcon size={54} round />
+                        </FacebookShareButton>
+                      </span>
+                      <span>
+                        <WhatsappShareButton
+                          url={`http://tiago-pimentel.firebaseapp.com/galeria/${
+                            item.id
+                          }`}
+                          quote={'Nova imagem postada!'}
+                        >
+                          <WhatsappIcon size={54} round />
+                        </WhatsappShareButton>
+                      </span>
+                    </div>
                   </div>
                 ) : (
                   <div
@@ -133,6 +174,39 @@ class GalleryContent extends React.Component {
                       onClick={() => this.isOpen(item.cont)}
                       controls
                     />
+                    <div className="gallery-page__social">
+                      <span>
+                        <TwitterShareButton
+                          url={`http://tiago-pimentel.firebaseapp.com/galeria/${
+                            item.id
+                          }`}
+                          quote={'Novo video postado!'}
+                        >
+                          <TwitterIcon size={54} round />
+                        </TwitterShareButton>
+                      </span>
+                      <span>
+                        <FacebookShareButton
+                          url={`http://tiago-pimentel.firebaseapp.com/galeria/${
+                            item.id
+                          }`}
+                          quote={'Novo video postado!'}
+                        >
+                          <FacebookIcon size={54} round />
+                        </FacebookShareButton>
+                      </span>
+
+                      <span>
+                        <WhatsappShareButton
+                          url={`http://tiago-pimentel.firebaseapp.com/galeria/${
+                            item.id
+                          }`}
+                          quote={'Novo video postado!'}
+                        >
+                          <WhatsappIcon size={54} round />
+                        </WhatsappShareButton>
+                      </span>
+                    </div>
                   </div>
                 );
               })
@@ -196,12 +270,3 @@ const mapStateToProps = state => {
 };
 
 export default connect(mapStateToProps)(GalleryContent);
-
-// const items = this.props.images
-//   .concat(this.props.videos)
-//   .sort((a, b) => {
-//     return a.createdAt < b.createdAt ? 1 : -1;
-//   })
-//   .map((item, i) => {
-//     return { ...item, cont: i };
-//   });
