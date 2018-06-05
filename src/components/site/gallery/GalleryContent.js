@@ -254,6 +254,38 @@ class GalleryContent extends React.Component {
                 selected: (this.state.selected + 1) % gallery.length
               })
             }
+            toolbarButtons={[
+              <span>
+                <TwitterShareButton
+                  url={`http://tiago-pimentel.firebaseapp.com/galeria/${
+                    gallery[selected].id
+                  }`}
+                  quote={'Novo video postado!'}
+                >
+                  <TwitterIcon size={42} round />
+                </TwitterShareButton>
+              </span>,
+              <span>
+                <FacebookShareButton
+                  url={`http://tiago-pimentel.firebaseapp.com/galeria/${
+                    gallery[selected].id
+                  }`}
+                  quote={'Novo video postado!'}
+                >
+                  <FacebookIcon size={42} round />
+                </FacebookShareButton>
+              </span>,
+              <span>
+                <WhatsappShareButton
+                  url={`http://tiago-pimentel.firebaseapp.com/galeria/${
+                    gallery[selected].id
+                  }`}
+                  quote={'Novo video postado!'}
+                >
+                  <WhatsappIcon size={42} round />
+                </WhatsappShareButton>
+              </span>
+            ]}
           />
         )}
       </Fragment>
