@@ -91,7 +91,7 @@ export class ImagesForm extends React.Component {
             Muay Thai
           </option>
           <option key="jiujitsu" value="jiujitsu">
-            Jiu Jitsu
+            Jiu-Jitsu
           </option>
         </select>
 

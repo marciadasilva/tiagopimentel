@@ -83,7 +83,7 @@
 .header__nav--item {
   &:after,
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     width: 95%;
@@ -125,7 +125,7 @@
   // font-size: 3rem;
   // text-transform: uppercase;
   height: 8rem;
-  width: 16rem;
+  width: 13rem;
   background: white;
   img {
     width: 100%;

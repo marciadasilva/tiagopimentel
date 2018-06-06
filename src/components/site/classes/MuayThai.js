@@ -101,7 +101,7 @@ class MuayThai extends React.Component {
             <section className="classes-page__gallery-list">
               <h3 className="classes-page__title">Outras Aulas</h3>
               <div className="classes-page__others">
-                <Link to="/jiujitsu">JiuJitsu</Link>
+                <Link to="/jiujitsu">Jiu-Jitsu</Link>
                 <Link to="/particular">Particulares</Link>
               </div>
             </section>

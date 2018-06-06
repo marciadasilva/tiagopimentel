@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -12,7 +12,7 @@ const Hero = () => {
               <span>
                 <img className="hero__bullet" src="./images/mark.png" />
               </span>
-              Aulas de Jiu Jitsu
+              Aulas de Jiu-Jitsu
             </p>
             <p>
               <span>

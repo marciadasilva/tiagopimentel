@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Schedule = () => {
   return (
@@ -14,7 +14,7 @@ const Schedule = () => {
             {/* ordem por dia de semana: segunda, terça... */}
             {/* 1 linha */}
             <div className="schedule__hour schedule__active">
-              <em>Jiu Jitsu</em>
+              <em>Jiu-Jitsu</em>
               <p>18:00 - 19:15</p>
               <div className="button__site--margin schedule__button">
                 <Link to="/" className="button__site ">
@@ -23,7 +23,7 @@ const Schedule = () => {
               </div>
             </div>
             <div className="schedule__hour schedule__active">
-              <em>Jiu Jitsu</em>
+              <em>Jiu-Jitsu</em>
               <p>18:00 - 19:15</p>
               <div className="button__site--margin schedule__button">
                 <Link to="/" className="button__site ">
@@ -32,7 +32,7 @@ const Schedule = () => {
               </div>
             </div>
             <div className="schedule__hour schedule__active">
-              <em>Jiu Jitsu</em>
+              <em>Jiu-Jitsu</em>
               <p>18:00 - 19:15</p>
               <div className="button__site--margin schedule__button">
                 <Link to="/" className="button__site ">
@@ -89,7 +89,7 @@ const Schedule = () => {
             <div className="schedule__week">Sexta</div>
             <div className="schedule__week">Sábado</div>
             <div className="schedule__hour schedule__active">
-              <em>Jiu Jitsu</em>
+              <em>Jiu-Jitsu</em>
               <p>18:00 - 19:15</p>
               <div className="button__site--margin schedule__button">
                 <Link to="/" className="button__site ">

@@ -8,7 +8,7 @@ import selectImages from '../../../selectors/images';
 
 class JiuJitsu extends React.Component {
   componentDidMount() {
-    document.title = 'Tiago Pimentel - JiuJitsu';
+    document.title = 'Tiago Pimentel - Jiu-Jitsu';
     window.scrollTo(0, 0);
   }
   componentWillUnmount() {
@@ -24,7 +24,7 @@ class JiuJitsu extends React.Component {
         <div id="page-wrap">
           <Header />
           <main className="classes-page">
-            <h2 className="classes-page__title">Jiu Jitsu</h2>
+            <h2 className="classes-page__title">Jiu-Jitsu</h2>
             <span className="classes-page__icon">---------------</span>
             <div className="classes-page__description">
               <p>
@@ -52,22 +52,30 @@ class JiuJitsu extends React.Component {
                 faixa. As faixas possuem a seguinte ordem:
                 <br />
                 <br />
-                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Branca</b> – para iniciantes de qualquer idade.
+                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
+                <b>Faixa Branca</b> – para iniciantes de qualquer idade.
                 <br />
-                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Azul</b> – normalmente para lutadores a partir de 15
+                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
+                <b>Faixa Azul</b> – normalmente para lutadores a partir de 15
                 anos que treinam em um período de um ano e meio até dois anos.
                 <br />
-                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Roxa</b> – varia com o desempenho. É geralmente
+                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
+                <b>Faixa Roxa</b> – varia com o desempenho. É geralmente
                 entregue para atletas a partir de 17 anos que estão na
                 modalidade há dois anos. <br />
-                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Roxa</b> – varia com o desempenho. É geralmente
+                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
+                <b>Faixa Roxa</b> – varia com o desempenho. É geralmente
                 entregue para atletas a partir de 17 anos que estão na
                 modalidade há dois anos. <br />
-                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Marrom</b> – normalmente um ano e meio de treino
-                para atletas a partir dos 18 anos. <br />
-                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Preta</b> – a partir dos 19 anos de idade. <br />
-                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Coral (vermelha e preta)</b> – para mestres. <br />
-                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Vermelha</b> – destinada ao grande mestre. <br />
+                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
+                <b>Faixa Marrom</b> – normalmente um ano e meio de treino para
+                atletas a partir dos 18 anos. <br />
+                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
+                <b>Faixa Preta</b> – a partir dos 19 anos de idade. <br />
+                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
+                <b>Faixa Coral (vermelha e preta)</b> – para mestres. <br />
+                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
+                <b>Faixa Vermelha</b> – destinada ao grande mestre. <br />
               </p>
             </div>
 

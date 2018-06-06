@@ -72,7 +72,7 @@ export class GalleryFilters extends React.Component {
               Modalidade
             </option>
             <option value="thai">Muay Thai</option>
-            <option value="jiujitsu">Jiu Jitsu</option>
+            <option value="jiujitsu">Jiu-Jitsu</option>
             <option value="all">Todas</option>
           </select>
         </div>

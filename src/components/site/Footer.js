@@ -34,7 +34,7 @@ const Footer = props => (
         <div className="footer__item">
           <h4 className="footer__title">Sobre</h4>
           <p className="footer__text">
-            Professor de Boxe, Muai Thay e Jiu Jitsu a X anos, na cidade de
+            Professor de Boxe, Muai Thay e Jiu-Jitsu a X anos, na cidade de
             Ijuí.
           </p>
         </div>
@@ -52,7 +52,14 @@ const Footer = props => (
         <div className="footer__item">
           <h4 className="footer__title">Contato</h4>
           <ul className="footer__text">
-            <li>55 65645645</li>
+            <li>
+              <i className="fas fa-angle-right" /> (55) 99165-0027
+            </li>
+            <li>
+              <Link to="/contato" className="footer__link">
+                <i className="fas fa-angle-right" /> Mais informações
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="footer__item">
