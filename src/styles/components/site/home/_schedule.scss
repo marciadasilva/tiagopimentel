@@ -45,22 +45,26 @@
 }
 
 .schedule__grid1 {
-  -webkit-box-shadow: 0px 2px 2rem rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 2rem rgba(0, 0, 0, 0.1);
-  display: -ms-grid;
-  display: grid;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-  grid-template: 50px repeat(4, [row] minmax(120px, 1fr)) / repeat(
+  @supports (display: grid) {
+    display: -ms-grid;
+    display: grid;
+    grid-template: 50px repeat(4, [row] minmax(120px, 1fr)) / repeat(
       3,
       [col] minmax(30vw, 1fr)
     );
-
-  @media (min-width: $desktop-breakpoint) {
-    grid-template: 50px repeat(4, [row] minmax(120px, 1fr)) / repeat(
-        3,
-        [col] minmax(12vw, 1fr)
-      );
+    -webkit-box-shadow: 0px 2px 2rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 2rem rgba(0, 0, 0, 0.1);
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+  background-image: url('/images/jiujitsu.png');
+  @supports (display: grid) {
+    @media (min-width: $desktop-breakpoint) {
+      grid-template: 50px repeat(4, [row] minmax(120px, 1fr)) / repeat(
+          3,
+          [col] minmax(12vw, 1fr)
+        );
+    }
   }
 }
 

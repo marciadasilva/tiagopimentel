@@ -37,9 +37,8 @@ export class MainContent extends React.Component {
             <span className="contact__info-name">Para mais informações</span>
             <h3 className="contact__info-title">Contato</h3>
             <p className="contact__info-description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Veritatis nulla beatae eius vitae est, saepe debitis aperiam!
-              Quaerat, iste, eius.
+              Mande uma mensagem e saiba mais informações sobre as aulas e como começar a treinar. <br/>
+              Ou se preferir venha conhecer a academia.
             </p>
             <p className="contact__info-description">
               Endereço: Marechal Mallet, 999 - Ijuí - RS <br />
