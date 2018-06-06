@@ -52,22 +52,22 @@ class JiuJitsu extends React.Component {
                 faixa. As faixas possuem a seguinte ordem:
                 <br />
                 <br />
-                => <b>Faixa Branca</b> – para iniciantes de qualquer idade.
+                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Branca</b> – para iniciantes de qualquer idade.
                 <br />
-                => <b>Faixa Azul</b> – normalmente para lutadores a partir de 15
+                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Azul</b> – normalmente para lutadores a partir de 15
                 anos que treinam em um período de um ano e meio até dois anos.
                 <br />
-                => <b>Faixa Roxa</b> – varia com o desempenho. É geralmente
+                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Roxa</b> – varia com o desempenho. É geralmente
                 entregue para atletas a partir de 17 anos que estão na
                 modalidade há dois anos. <br />
-                => <b>Faixa Roxa</b> – varia com o desempenho. É geralmente
+                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Roxa</b> – varia com o desempenho. É geralmente
                 entregue para atletas a partir de 17 anos que estão na
                 modalidade há dois anos. <br />
-                => <b>Faixa Marrom</b> – normalmente um ano e meio de treino
+                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Marrom</b> – normalmente um ano e meio de treino
                 para atletas a partir dos 18 anos. <br />
-                => <b>Faixa Preta</b> – a partir dos 19 anos de idade. <br />
-                => <b>Faixa Coral (vermelha e preta)</b> – para mestres. <br />
-                => <b>Faixa Vermelha</b> – destinada ao grande mestre. <br />
+                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Preta</b> – a partir dos 19 anos de idade. <br />
+                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Coral (vermelha e preta)</b> – para mestres. <br />
+                <i className="fas fa-bullseye classes-page__description--icon"></i> <b>Faixa Vermelha</b> – destinada ao grande mestre. <br />
               </p>
             </div>
 
