@@ -7,7 +7,9 @@ import PriceListComponent from "../home/PriceList";
 class PriceList extends React.Component {
   componentDidMount() {
     document.title = "Tiago Pimentel - Preços";
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 2);
   }
   componentWillUnmount() {
     document.title = "Tiago Pimentel";

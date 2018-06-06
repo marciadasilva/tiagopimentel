@@ -7,7 +7,9 @@ import ScheduleComponent from "../home/Schedule";
 class Schedule extends React.Component {
   componentDidMount() {
     document.title = "Tiago Pimentel - Contato";
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 2);
   }
   componentWillUnmount() {
     document.title = "Tiago Pimentel";

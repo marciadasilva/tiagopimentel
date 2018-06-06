@@ -13,7 +13,9 @@ import SlideMenu from './SlideMenu';
 
 class IndexPage extends React.Component {
   componentDidMount() {
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 2);
   }
   render() {
     return (

@@ -47,7 +47,7 @@ const Header = props => (
         </NavLink>
       </ul>
       <Link to="/" className="header__brand">
-        Logo
+        <img src="./images/logo.png" alt="Logo da empresa"/>
       </Link>
     </div>
   </header>

@@ -10,7 +10,9 @@ import SlideMenu from './SlideMenu';
 class IndexPage extends React.Component {
   componentDidMount() {
     document.title = 'Tiago Pimentel - Galeria';
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 2);
   }
   componentWillUnmount() {
     document.title = 'Tiago Pimentel';
