@@ -29,7 +29,7 @@ const PriceList = () => {
               </li>
             </ul>
             <div className="button__site--margin price-list__button">
-              <Link to="/" className="button__site button__site--price-list">
+              <Link to="/contato" className="button__site button__site--price-list">
                 <span>Contato</span>
               </Link>
             </div>
@@ -41,12 +41,12 @@ const PriceList = () => {
             delay={250}
           >
             <div className="price-list__category price-list__category-img2">
-              Jiu Jitsu
+              Jiu-Jitsu
             </div>
             <ul className="price-list__list">
               <li className="price-list__features">
                 <p>
-                  Treinos de Jiu Jitsu todas as segundas, terças, quartas,
+                  Treinos de Jiu-Jitsu todas as segundas, terças, quartas,
                   quintas e sábados
                 </p>
                 <span>3x</span> na semana: <span>R$ 90,00</span>
@@ -59,7 +59,7 @@ const PriceList = () => {
               </li>
             </ul>
             <div className="button__site--margin price-list__button">
-              <Link to="/" className="button__site button__site--price-list">
+              <Link to="/contato" className="button__site button__site--price-list">
                 <span>Contato</span>
               </Link>
             </div>
@@ -80,7 +80,7 @@ const PriceList = () => {
               </li>
             </ul>
             <div className="button__site--margin price-list__button">
-              <Link to="/" className="button__site button__site--price-list">
+              <Link to="/contato" className="button__site button__site--price-list">
                 <span>Contato</span>
               </Link>
             </div>
