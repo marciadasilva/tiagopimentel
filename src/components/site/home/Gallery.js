@@ -8,7 +8,7 @@ class Gallery extends React.Component {
     return (
       <section className="gallery">
         {/* <span className="gallery__name">Galeria</span> */}
-        <h3 className="gallery__title">Veja nossas fotos</h3>
+        <h3 className="gallery__title">Galerias de fotos e vídeos</h3>
         <span className="gallery__icon">----------</span>
         <div className="gallery__list">
           {this.props.images

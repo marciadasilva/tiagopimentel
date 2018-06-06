@@ -26,11 +26,8 @@ export class MainContent extends React.Component {
       <main className="contact">
         <h2 className="contact__title">Entre em Contato</h2>
         <span className="contact__icon">---------------</span>
-        <p className="contact__description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
-          cum exercitationem, nostrum aliquam pariatur repudiandae at eligendi
-          nobis qui minima.
-        </p>
+        {/* <p className="contact__description"> */}
+        {/* </p> */}
 
         <div className="contact__group">
           <div className="contact__map">
