@@ -52,6 +52,13 @@ class JiuJitsu extends React.Component {
                 faixa. As faixas possuem a seguinte ordem:
                 <br />
                 <br />
+                <img src="/images/white-belt.png" alt="white-belt"/>
+                <img src="/images/blue-belt.png" alt="blue-belt"/>
+                <img src="/images/purple-belt.png" alt="purple-belt"/>
+                <img src="/images/brown-belt.png" alt="brown-belt"/>
+                <img src="/images/black-belt.png" alt="black-belt"/>
+                <img src="/images/red-belt.png" alt="red-belt"/>
+
                 <i className="fas fa-bullseye classes-page__description--icon" />{' '}
                 <b>Faixa Branca</b> – para iniciantes de qualquer idade.
                 <br />

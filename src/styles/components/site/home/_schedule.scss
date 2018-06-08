@@ -57,7 +57,6 @@
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
   }
-  background-image: url('/images/cronograma-primeiro.png');
   @supports (display: grid) {
     @media (min-width: $desktop-breakpoint) {
       grid-template: 50px repeat(4, [row] minmax(120px, 1fr)) / repeat(
@@ -66,29 +65,73 @@
         );
     }
   }
+
+  // Código para navegadores que não tem suporte ao grid
+  @supports not (display: grid) {
+    background-image: url('/images/cronograma-primeiro.png'); 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    flex-basis: 100%;
+    height: 30rem;
+  }
+
+
+  @supports not (display: grid) {
+    @media (min-width: $desktop-breakpoint) {
+      flex-basis: 50%;
+      height: 50rem;
+      background-position: right;
+    }
+  }
 }
 
 .schedule__grid2 {
-  -webkit-box-shadow: 0px 2px 2rem rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 2rem rgba(0, 0, 0, 0.1);
-  display: -ms-grid;
-  display: grid;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-  grid-template: 50px repeat(4, [row] minmax(120px, 1fr)) / repeat(
-      3,
-      [col] minmax(30vw, 1fr)
-    );
-
-  @media (min-width: $desktop-breakpoint) {
+  @supports (display: grid) {
+    -webkit-box-shadow: 0px 2px 2rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 2rem rgba(0, 0, 0, 0.1);
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
     grid-template: 50px repeat(4, [row] minmax(120px, 1fr)) / repeat(
         3,
-        [col] minmax(12vw, 1fr)
+        [col] minmax(30vw, 1fr)
       );
+  }  
+
+  @supports (display: grid) {
+    @media (min-width: $desktop-breakpoint) {
+      grid-template: 50px repeat(4, [row] minmax(120px, 1fr)) / repeat(
+          3,
+          [col] minmax(12vw, 1fr)
+        );
+    }
+  }
+
+  // Código para navegadores que não tem suporte ao grid
+  @supports not (display: grid) {
+    background-image: url('/images/cronograma-segundo.png'); 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    flex-basis: 100%;
+    height: 30rem;
+  }
+
+  @supports not (display: grid) {
+    @media (min-width: $desktop-breakpoint) {
+      flex-basis: 50%;
+      height: 50rem;
+      background-position: left;
+    }
   }
 }
 
 .schedule__week {
+  @supports not (display: grid) {
+    display: none;
+  }
   background-color: #242424;
   color: #f4f4f4;
   display: -ms-grid;
@@ -103,6 +146,9 @@
 }
 
 .schedule__hour {
+  @supports not (display: grid) {
+    display: none;
+  }
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +189,7 @@
     font-family: $text-font;
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
-    display: none; // <<<<<<<<<<<<<<<<<<<<<<<
+    display: none; 
     @media (min-width: $desktop-breakpoint) {
       font-size: 1.5rem;
       padding: 0.7rem 2rem;
