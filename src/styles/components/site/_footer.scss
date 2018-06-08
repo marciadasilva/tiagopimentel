@@ -120,11 +120,19 @@
 .footer__title {
   font-size: 1.4rem;
   font-weight: 600;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .footer__text {
-  padding: 1rem 1rem 1rem 0;
+  font-family: $text-font;
+  color: #c6c6c6;
+  padding: 3rem 0 1rem;
+  margin-right: 6rem;
+}
+
+.footer__text--pb li {
+  padding-bottom: 2rem;
 }
 
 .footer__link {
@@ -132,11 +140,18 @@
 }
 
 .footer__devs {
-  background-color: #000;
+  align-items: center;
+  background: #0f0f0f;
+  border-top: 1px solid #262424;
   color: #f4f4f4;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 
   span {
     color: #ff373d;
+  }
+
+  p {
+    padding: 1rem;
   }
 }

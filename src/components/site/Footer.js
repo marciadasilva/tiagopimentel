@@ -33,31 +33,31 @@ const Footer = props => (
       <div className="footer__wrapper">
         <div className="footer__item">
           <h4 className="footer__title">Sobre</h4>
-          <p className="footer__text">
+          <p className="footer__text footer__text--pb">
             Professor de Boxe, Muai Thay e Jiu-Jitsu a X anos, na cidade de
             Ijuí.
           </p>
         </div>
         <div className="footer__item">
           <h4 className="footer__title">Endereço</h4>
-          <ul className="footer__text">
+          <ul className="footer__text footer__text--pb">
             <li>
-              <i className="fas fa-angle-right" /> Marechal Mallet, 111 - Ijuí
+            <i className="fas fa-map" /> Rua Marechal Malet - Centro, Ijuí - RS, 98700-000
             </li>
             <li>
-              <i className="fas fa-angle-right" /> Endereço Sogi, 111 - Ijuí
+            <i className="fas fa-map" /> Rua Benjamin Constant, 917 - Centro, Ijuí - RS, 98700-000
             </li>
           </ul>
         </div>
         <div className="footer__item">
           <h4 className="footer__title">Contato</h4>
-          <ul className="footer__text">
+          <ul className="footer__text footer__text--pb">
             <li>
-              <i className="fas fa-angle-right" /> (55) 99165-0027
+            <i className="fas fa-phone" /> (55) 99165-0027
             </li>
             <li>
               <Link to="/contato" className="footer__link">
-                <i className="fas fa-angle-right" /> Mais informações
+              <i className="fas fa-comments" /> Mais informações
               </Link>
             </li>
           </ul>
@@ -67,27 +67,27 @@ const Footer = props => (
           <ul className="footer__text">
             <li>
               <Link to="/" className="footer__link">
-                <i className="fas fa-angle-right" /> Início
+              <i className="fas fa-home" /> Início
               </Link>
             </li>
             <li>
               <Link to="/galeria" className="footer__link">
-                <i className="fas fa-angle-right" /> Galeria
+              <i className="fas fa-camera" /> Galeria
               </Link>
             </li>
             <li>
               <Link to="/programas" className="footer__link">
-                <i className="fas fa-angle-right" /> Programas
+                <i className="fas fa-dollar-sign" /> Programas
               </Link>
             </li>
             <li>
               <Link to="/cronograma" className="footer__link">
-                <i className="fas fa-angle-right" /> Cronograma
+                <i className="far fa-calendar-alt" /> Cronograma
               </Link>
             </li>
             <li>
               <Link to="/login" className="footer__link">
-                <i className="fas fa-angle-right" /> Login
+                <i className="fas fa-user" /> Login
               </Link>
             </li>
           </ul>
