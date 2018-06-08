@@ -44,6 +44,10 @@
   font-size: 1.3rem;
 }
 
+.classes-page__description--img {
+  width: 10rem;
+}
+
 .classes-page__gallery-list {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -117,4 +121,19 @@
       flex-basis: 49%;
     }
   }
+}
+
+.classes-page__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  > * {
+    color: #242424;
+  }
+}
+
+.classes-page__thai {
+  height: 10rem;
+  width: 10rem;
 }

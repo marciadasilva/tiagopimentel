@@ -1,6 +1,6 @@
-import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import { Link } from "react-router-dom";
+import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import { Link } from 'react-router-dom';
 
 const PriceList = () => {
   return (
@@ -19,6 +19,9 @@ const PriceList = () => {
             <ul className="price-list__list">
               <li className="price-list__features">
                 <p>Treinos de Muay thai todas as segundas, quartas e sábados</p>
+                <p className="price-list__features_promo">
+                  Experimente uma semana de graça
+                </p>
                 <span>3x</span> na semana: <span>R$ 90,00</span>
               </li>
               <li className="price-list__features">
@@ -29,7 +32,10 @@ const PriceList = () => {
               </li>
             </ul>
             <div className="button__site--margin price-list__button">
-              <Link to="/contato" className="button__site button__site--price-list">
+              <Link
+                to="/contato"
+                className="button__site button__site--price-list"
+              >
                 <span>Contato</span>
               </Link>
             </div>
@@ -49,6 +55,9 @@ const PriceList = () => {
                   Treinos de Jiu-Jitsu todas as segundas, terças, quartas,
                   quintas e sábados
                 </p>
+                <p className="price-list__features_promo">
+                  Experimente uma semana de graça
+                </p>
                 <span>3x</span> na semana: <span>R$ 90,00</span>
               </li>
               <li className="price-list__features">
@@ -59,7 +68,10 @@ const PriceList = () => {
               </li>
             </ul>
             <div className="button__site--margin price-list__button">
-              <Link to="/contato" className="button__site button__site--price-list">
+              <Link
+                to="/contato"
+                className="button__site button__site--price-list"
+              >
                 <span>Contato</span>
               </Link>
             </div>
@@ -80,7 +92,10 @@ const PriceList = () => {
               </li>
             </ul>
             <div className="button__site--margin price-list__button">
-              <Link to="/contato" className="button__site button__site--price-list">
+              <Link
+                to="/contato"
+                className="button__site button__site--price-list"
+              >
                 <span>Contato</span>
               </Link>
             </div>

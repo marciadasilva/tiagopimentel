@@ -51,8 +51,22 @@ class Private extends React.Component {
             <section className="classes-page__gallery-list">
               <h3 className="classes-page__title">Outras Aulas</h3>
               <div className="classes-page__others">
-                <Link to="/jiujitsu">Jiu-Jitsu</Link>
-                <Link to="/muaythai">Muay Thai</Link>
+                <Link className="classes-page__item" to="/jiujitsu">
+                  <span>Jiu-Jitsu</span>
+                  <img
+                    src="/images/jitsu.jpg"
+                    alt="Jiu-Jitsu"
+                    className="classes-page__thai"
+                  />
+                </Link>
+                <Link className="classes-page__item" to="/muaythai">
+                  <span>Muay Thai</span>
+                  <img
+                    src="/images/thai.png"
+                    alt="Muay Thai"
+                    className="classes-page__thai"
+                  />
+                </Link>
               </div>
             </section>
           </main>

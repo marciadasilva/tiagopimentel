@@ -52,37 +52,63 @@ class JiuJitsu extends React.Component {
                 faixa. As faixas possuem a seguinte ordem:
                 <br />
                 <br />
-                <img src="/images/white-belt.png" alt="white-belt"/>
-                <img src="/images/blue-belt.png" alt="blue-belt"/>
-                <img src="/images/purple-belt.png" alt="purple-belt"/>
-                <img src="/images/brown-belt.png" alt="brown-belt"/>
-                <img src="/images/black-belt.png" alt="black-belt"/>
-                <img src="/images/red-belt.png" alt="red-belt"/>
-
-                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
-                <b>Faixa Branca</b> – para iniciantes de qualquer idade.
+                <img
+                  className="classes-page__description--img"
+                  src="/images/white-belt.png"
+                  alt="white-belt"
+                />
+                <img
+                  className="classes-page__description--img"
+                  src="/images/blue-belt.png"
+                  alt="blue-belt"
+                />
+                <img
+                  className="classes-page__description--img"
+                  src="/images/purple-belt.png"
+                  alt="purple-belt"
+                />
+                <img
+                  className="classes-page__description--img"
+                  src="/images/brown-belt.png"
+                  alt="brown-belt"
+                />
+                <img
+                  className="classes-page__description--img"
+                  src="/images/black-belt.png"
+                  alt="black-belt"
+                />
+                <img
+                  className="classes-page__description--img"
+                  src="/images/red-belt.png"
+                  alt="red-belt"
+                />
                 <br />
-                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
-                <b>Faixa Azul</b> – normalmente para lutadores a partir de 15
+                <br />
+                <i className="fas fa-bullseye classes-page__description--icon" />
+                <b> Faixa Branca</b> – para iniciantes de qualquer idade.
+                <br />
+                <i className="fas fa-bullseye classes-page__description--icon" />
+                <b> Faixa Azul</b> – normalmente para lutadores a partir de 15
                 anos que treinam em um período de um ano e meio até dois anos.
                 <br />
-                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
-                <b>Faixa Roxa</b> – varia com o desempenho. É geralmente
+                <i className="fas fa-bullseye classes-page__description--icon" />
+                <b> Faixa Roxa</b> – varia com o desempenho. É geralmente
                 entregue para atletas a partir de 17 anos que estão na
                 modalidade há dois anos. <br />
-                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
-                <b>Faixa Roxa</b> – varia com o desempenho. É geralmente
+                <i className="fas fa-bullseye classes-page__description--icon" />
+                <b> Faixa Roxa</b> – varia com o desempenho. É geralmente
                 entregue para atletas a partir de 17 anos que estão na
                 modalidade há dois anos. <br />
-                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
-                <b>Faixa Marrom</b> – normalmente um ano e meio de treino para
+                <i className="fas fa-bullseye classes-page__description--icon" />
+                <b> Faixa Marrom</b> – normalmente um ano e meio de treino para
                 atletas a partir dos 18 anos. <br />
-                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
-                <b>Faixa Preta</b> – a partir dos 19 anos de idade. <br />
-                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
-                <b>Faixa Coral (vermelha e preta)</b> – para mestres. <br />
-                <i className="fas fa-bullseye classes-page__description--icon" />{' '}
-                <b>Faixa Vermelha</b> – destinada ao grande mestre. <br />
+                <i className="fas fa-bullseye classes-page__description--icon" />
+                <b> Faixa Preta</b> – a partir dos 19 anos de idade. <br />
+                <i className="fas fa-bullseye classes-page__description--icon" />
+                <b> Faixa Coral (vermelha e preta)</b> – para mestres. <br />
+                <i className="fas fa-bullseye classes-page__description--icon" />
+                <b> Faixa Vermelha</b> – destinada ao grande mestre. <br />
+                <br />
               </p>
             </div>
 
@@ -118,8 +144,22 @@ class JiuJitsu extends React.Component {
             <section className="classes-page__gallery-list">
               <h3 className="classes-page__title">Outras Aulas</h3>
               <div className="classes-page__others">
-                <Link to="/muaythai">Muay Thai</Link>
-                <Link to="/particular">Particulares</Link>
+                <Link className="classes-page__item" to="/muaythai">
+                  <span>Muay Thai</span>
+                  <img
+                    src="/images/thai.png"
+                    alt="Muay Thai"
+                    className="classes-page__thai"
+                  />
+                </Link>
+                <Link className="classes-page__item" to="/particular">
+                  <span>Particulares</span>
+                  <img
+                    src="/images/private.jpg"
+                    alt="Particulares"
+                    className="classes-page__thai"
+                  />
+                </Link>
               </div>
             </section>
           </main>
