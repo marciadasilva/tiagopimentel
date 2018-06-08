@@ -9,17 +9,17 @@
 
 @media (min-width: 790px) {
   .classes-grid {
-    @supports (display: grid) {
+    // @supports (display: grid) {
       grid-row-start: row 3;
-    }
+    // }
   }
 }
 
 @media (min-width: 872px) {
   .classes-grid {
-    @supports (display: grid) {
+    // @supports (display: grid) {
       grid-row-start: row 4;
-    }
+    // }
   }
 }
 
