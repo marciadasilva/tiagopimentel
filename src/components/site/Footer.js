@@ -42,10 +42,12 @@ const Footer = props => (
           <h4 className="footer__title">Endereço</h4>
           <ul className="footer__text footer__text--pb">
             <li>
-            <i className="fas fa-map" /> Rua Marechal Malet - Centro, Ijuí - RS, 98700-000
+              <i className="fas fa-map" /> Rua Marechal Malet - Centro, Ijuí -
+              RS, 98700-000
             </li>
             <li>
-            <i className="fas fa-map" /> Rua Benjamin Constant, 917 - Centro, Ijuí - RS, 98700-000
+              <i className="fas fa-map" /> Rua Benjamin Constant, 917 - Centro,
+              Ijuí - RS, 98700-000
             </li>
           </ul>
         </div>
@@ -53,11 +55,12 @@ const Footer = props => (
           <h4 className="footer__title">Contato</h4>
           <ul className="footer__text footer__text--pb">
             <li>
-            <i className="fas fa-phone" /> (55) 99165-0027
+              <i className="fas fa-phone" data-fa-transform="rotate-90" /> (55)
+              99165-0027
             </li>
             <li>
               <Link to="/contato" className="footer__link">
-              <i className="fas fa-comments" /> Mais informações
+                <i className="fas fa-comments" /> Mais informações
               </Link>
             </li>
           </ul>
@@ -67,12 +70,12 @@ const Footer = props => (
           <ul className="footer__text">
             <li>
               <Link to="/" className="footer__link">
-              <i className="fas fa-home" /> Início
+                <i className="fas fa-home" /> Início
               </Link>
             </li>
             <li>
               <Link to="/galeria" className="footer__link">
-              <i className="fas fa-camera" /> Galeria
+                <i className="fas fa-camera" /> Galeria
               </Link>
             </li>
             <li>
