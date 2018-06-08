@@ -5,22 +5,36 @@
 
 .grid-hero {
   display: block;
-  @supports (display: grid) {
+}
+
+@supports (display: grid) {
+  .grid-hero {
     display: -ms-grid;
     display: grid;
     grid-template:
       repeat(6, [row] minmax(120px, 280px)) / 0.7rem repeat(4, [col] 1fr)
       0.7rem;
-  }
+   }
 }
 
-@media (min-width: $desktop-breakpoint) {
-  .grid-hero {
-    @supports (display: grid) {
+@supports (display: grid) { 
+  @media (min-width: $desktop-breakpoint) {
+    .grid-hero {
       grid-template:
-        repeat(6, [row] minmax(150px, 230px)) / 100px repeat(4, [col] 1fr)
-        100px;
+      repeat(6, [row] minmax(150px, 230px)) / 100px repeat(4, [col] 1fr)
+      100px;
       grid-gap: 20px;
     }
-  }
+  }  
 }
+
+// @media (min-width: $desktop-breakpoint) {
+//   .grid-hero {
+//     @supports (display: grid) {
+//       grid-template:
+//         repeat(6, [row] minmax(150px, 230px)) / 100px repeat(4, [col] 1fr)
+//         100px;
+//       grid-gap: 20px;
+//     }
+//   }
+// }
