@@ -1,16 +1,7 @@
-// .classes-grid {
-//   @supports (display: grid) {
-//     grid-column: 2 / -2;
-//     grid-row: row 3 / -1;
-//     margin-top: 1rem;
-//     z-index: 1;
-//   }
-// }
-
 @supports (display: grid) {
   .classes-grid {
     grid-column: 2 / -2;
-    grid-row: row 3 / -1;
+    grid-row-start: row 3;
     margin-top: 1rem;
     z-index: 1;
   }
@@ -28,7 +19,7 @@
 @supports (display: grid) {
   @media (min-width: 872px) {
     .classes-grid {
-      grid-row-start: row 4;
+      grid-row-start: row 3;
     }  
   }
 }
