@@ -12,19 +12,29 @@
     display: -ms-grid;
     display: grid;
     grid-template:
-      repeat(6, [row] minmax(120px, 230px)) / 0.7rem repeat(4, [col] 1fr)
+      repeat(6, [row] minmax(120px, 255px)) / 0.7rem repeat(4, [col] 1fr)
       0.7rem;
-   }
+  }
 }
 
-@supports (display: grid) { 
-  @media (min-width: $desktop-breakpoint) {
+@supports (display: grid) {
+  @media (min-width: 720px) {
     .grid-hero {
       grid-template:
-      repeat(4, [row] minmax(150px, 230px)) / 100px repeat(4, [col] 1fr)
-      100px;
+        repeat(4, [row] minmax(150px, 210px)) / 1rem repeat(4, [col] 1fr)
+        1rem;
       grid-gap: 20px;
     }
-  }  
+  }
 }
 
+@supports (display: grid) {
+  @media (min-width: 1025px) {
+    .grid-hero {
+      grid-template:
+        repeat(4, [row] minmax(150px, 230px)) / 100px repeat(4, [col] 1fr)
+        100px;
+      grid-gap: 20px;
+    }
+  }
+}
