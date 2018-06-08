@@ -57,14 +57,10 @@ export class MainContent extends React.Component {
 
           <div className="contact__aside-form">
             <p className="contact__aside-description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              laudantium, quis amet magnam consectetur animi cumque inventore
-              perferendis.
+              Você tem alguma dúvida? Não se preocupe, estamos sempre disponíveis para responder a qualquer dúvida.                            
             </p>
             <p className="contact__aside-description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
-              ipsa blanditiis atque vitae perspiciatis voluptatem temporibus,
-              velit et.
+              Você pode nos mandar uma mensagem pelo WhatsApp, ligar ou preencher o formulário ao lado e vamos entrar em contato com você o mais breve possível.              
             </p>
             <ul className="contact__social">
               <li className="contact__social-item">
