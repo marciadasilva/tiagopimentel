@@ -29,9 +29,12 @@
 .partnership__instructors {
   color: #ba0303;
   font-family: $text-font;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-top: 1rem;
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 1.2rem;
+  }
 }
 
 .partnership__icon {
@@ -80,21 +83,21 @@
 }
 
 .p-image1 {
-  background: url("/images/p-image1.png");
+  background: url('/images/p-image1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .p-image2 {
-  background: url("/images/p-image2.png");
+  background: url('/images/p-image2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .p-image3 {
-  background: url("/images/p-image3.png");
+  background: url('/images/p-image3.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,8 +105,18 @@
 
 .partnership__description {
   font-family: $text-font;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   padding: 0.5rem 2rem;
   text-align: center;
   color: #636363;
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 1.1rem;
+  }
+}
+
+.partnership__name {
+  font-size: 2rem;
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 1.6rem;
+  }
 }

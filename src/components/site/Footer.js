@@ -80,7 +80,7 @@ const Footer = props => (
             </li>
             <li>
               <Link to="/programas" className="footer__link">
-                <i className="fas fa-dollar-sign" /> Programas
+                &nbsp;<i className="fas fa-dollar-sign" /> Programas
               </Link>
             </li>
             <li>

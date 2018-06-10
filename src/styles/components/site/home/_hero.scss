@@ -7,7 +7,7 @@
 }
 
 .hero {
-  background: url("/images/hero.jpg");
+  background: url('/images/hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -41,9 +41,6 @@
   @extend .title__font;
   font-size: 5rem;
   text-transform: uppercase;
-  @media (min-width: $desktop-breakpoint) {
-    font-size: 7rem;
-  }
 }
 
 .hero__bullet {
