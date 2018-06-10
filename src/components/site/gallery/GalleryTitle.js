@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 
 const GalleryTitle = () => {
   return (
     <Fragment>
       <h2 className="gallery-page__title">Fotos e Vídeos</h2>
-      <span className="gallery-page__icon">---------------</span>
+      <span className="gallery-page__icon" />
       {/* <p className="gallery-page__description"> */}
 
       {/* </p> */}

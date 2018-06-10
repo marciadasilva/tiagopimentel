@@ -1,31 +1,31 @@
-import React from 'react';
-import Header from '../Header';
-import Footer from '../Footer';
-import SlideMenu from '../SlideMenu';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import selectImages from '../../../selectors/images';
+import React from "react";
+import Header from "../Header";
+import Footer from "../Footer";
+import SlideMenu from "../SlideMenu";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import selectImages from "../../../selectors/images";
 
 class JiuJitsu extends React.Component {
   componentDidMount() {
-    document.title = 'Tiago Pimentel - Jiu-Jitsu';
+    document.title = "Tiago Pimentel - Jiu-Jitsu";
     window.scrollTo(0, 0);
   }
   componentWillUnmount() {
-    document.title = 'Tiago Pimentel';
+    document.title = "Tiago Pimentel";
   }
   render() {
     return (
       <div id="outer-container ">
         <SlideMenu
-          pageWrapId={'page-wrap'}
-          outerContainerId={'outer-container'}
+          pageWrapId={"page-wrap"}
+          outerContainerId={"outer-container"}
         />
         <div id="page-wrap">
           <Header />
           <main className="classes-page">
             <h2 className="classes-page__title">Jiu-Jitsu</h2>
-            <span className="classes-page__icon">---------------</span>
+            <span className="classes-page__icon classes-page__icon--jj" />
             <div className="classes-page__description">
               <p>
                 O Jiu-Jitsu é uma arte marcial de raiz japonesa que se utiliza
@@ -116,7 +116,7 @@ class JiuJitsu extends React.Component {
               <h3 className="classes-page__title">Últimos treinos</h3>
               <div className="classes-page__gallery">
                 {this.props.images
-                  .filter(image => image.category === 'jiujitsu')
+                  .filter(image => image.category === "jiujitsu")
                   .slice(
                     0,
                     this.props.images.length >= 4 ? 4 : this.props.images.length

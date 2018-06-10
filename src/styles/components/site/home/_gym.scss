@@ -84,9 +84,12 @@
 }
 
 .gym__icon {
+  background-image: url("/images/ring.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   color: #edb19a;
-  font-size: 1.3rem;
-  padding: 0 1rem 1rem 1rem;
+  padding: 1.7rem;
 }
 
 .gym__description {

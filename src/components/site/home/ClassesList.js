@@ -1,5 +1,5 @@
-import React from 'react';
-import ClassesItem from './ClassesItem';
+import React from "react";
+import ClassesItem from "./ClassesItem";
 
 const ClassesList = () => {
   return (
@@ -26,7 +26,7 @@ const ClassesList = () => {
           />
           <ClassesItem
             name="Aulas Particulares"
-            description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+            description="De iniciantes a lutadores, aulas particulares de boxe de Muay Thai são excelentes para dar atenção pessoal a um indivíduo pode precisar dominar uma técnica difícil de boxe Muay Thai ou para ajuda extra com sua classificação de boxe Muay Thai. "
             cta="Ver Mais"
             imgUrl="/images/particulares.png"
             link="/particular"

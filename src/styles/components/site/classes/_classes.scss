@@ -28,15 +28,32 @@
 }
 
 .classes-page__icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   color: #edb19a;
-  padding: 0 1rem 2rem 1rem;
-  font-size: 1.3rem;
+}
+
+.classes-page__icon--thai {
+  background-image: url("/images/gloves.png");
+  padding: 3rem;
+}
+
+.classes-page__icon--jj {
+  background-image: url("/images/jj-belt.png");
+  padding: 3rem 5rem;
+}
+
+.classes-page__icon--private {
+  background-image: url("/images/coach.png");
+  padding: 3rem 5rem;
 }
 
 .classes-page__description {
   font-family: $text-font;
   max-width: 60vw;
   font-size: 1.7rem;
+  padding-top: 5rem;
 }
 
 .classes-page__description--icon {

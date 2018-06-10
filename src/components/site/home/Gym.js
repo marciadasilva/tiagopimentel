@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Gym = () => {
   return (
@@ -8,7 +8,7 @@ const Gym = () => {
         <div className="gym__text">
           <span className="gym__name">Academia</span>
           <h3 className="gym__title">CT Tiago Pimentel</h3>
-          <span className="gym__icon">----------</span>
+          <span className="gym__icon" />
           <p className="gym__description">
             Academia preparada para treinos de Jiu-Jitsu e Muay Thai. As aulas
             são direcionadas para você que já é um lutador, quer se tornar um,
@@ -21,7 +21,7 @@ const Gym = () => {
         <div className="gym__text">
           <span className="gym__name">Academia</span>
           <h3 className="gym__title">Sogi</h3>
-          <span className="gym__icon">----------</span>
+          <span className="gym__icon" />
           <p className="gym__description">
             A Sociedade Ginástica Ijuí disponibiliza aos seus associados
             diversas modalidades de esportes, dentre elas o Jiu-Jitsu e Muay

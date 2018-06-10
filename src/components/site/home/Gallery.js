@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import selectImages from '../../../selectors/images';
+import React from "react";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import selectImages from "../../../selectors/images";
 
 class Gallery extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class Gallery extends React.Component {
       <section className="gallery">
         {/* <span className="gallery__name">Galeria</span> */}
         <h3 className="gallery__title">Galerias de fotos e vídeos</h3>
-        <span className="gallery__icon">----------</span>
+        <span className="gallery__icon" />
         <div className="gallery__list">
           {this.props.images
             .slice(

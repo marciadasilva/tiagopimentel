@@ -28,9 +28,12 @@
 }
 
 .contact__icon {
+  background-image: url("/images/gloves.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   color: #edb19a;
-  padding: 0 1rem 2rem 1rem;
-  font-size: 1.3rem;
+  padding: 3rem;
 }
 
 .contact__description {

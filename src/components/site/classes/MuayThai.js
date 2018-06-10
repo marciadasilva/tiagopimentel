@@ -1,31 +1,31 @@
-import React from 'react';
-import Header from '../Header';
-import Footer from '../Footer';
-import SlideMenu from '../SlideMenu';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import selectImages from '../../../selectors/images';
+import React from "react";
+import Header from "../Header";
+import Footer from "../Footer";
+import SlideMenu from "../SlideMenu";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import selectImages from "../../../selectors/images";
 
 class MuayThai extends React.Component {
   componentDidMount() {
-    document.title = 'Tiago Pimentel - Muay Thai';
+    document.title = "Tiago Pimentel - Muay Thai";
     window.scrollTo(0, 0);
   }
   componentWillUnmount() {
-    document.title = 'Tiago Pimentel';
+    document.title = "Tiago Pimentel";
   }
   render() {
     return (
       <div id="outer-container ">
         <SlideMenu
-          pageWrapId={'page-wrap'}
-          outerContainerId={'outer-container'}
+          pageWrapId={"page-wrap"}
+          outerContainerId={"outer-container"}
         />
         <div id="page-wrap">
           <Header />
           <main className="classes-page">
             <h2 className="classes-page__title">Muay Thai</h2>
-            <span className="classes-page__icon">---------------</span>
+            <span className="classes-page__icon classes-page__icon--thai" />
             <div className="classes-page__description">
               <p>
                 O Muay thai é uma luta de origem tailandesa. Esta modalidade de
@@ -85,7 +85,7 @@ class MuayThai extends React.Component {
                 <br />
                 <i className="fas fa-bullseye classes-page__description--icon" />
                 <b>
-                  {' '}
+                  {" "}
                   Kruang preto e branco, com a ponta vermelha (grão mestre)
                 </b>
                 <br />
@@ -97,7 +97,7 @@ class MuayThai extends React.Component {
               <h3>Últimos treinos</h3>
               <div className="classes-page__gallery">
                 {this.props.images
-                  .filter(image => image.category === 'thai')
+                  .filter(image => image.category === "thai")
                   .slice(
                     0,
                     this.props.images.length >= 4 ? 4 : this.props.images.length

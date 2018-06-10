@@ -38,9 +38,12 @@
 }
 
 .partnership__icon {
+  background-image: url("/images/fist.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   color: #edb19a;
-  font-size: 1.3rem;
-  padding: 0 1rem 1rem 1rem;
+  padding: 1.7rem;
 }
 
 .partnership__list {
@@ -83,24 +86,24 @@
 }
 
 .p-image1 {
-  background: url('/images/p-image1.png');
+  background: url("/images/p-image1.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .p-image2 {
-  background: url('/images/p-image2.png');
+  background: url("/images/p-image2.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .p-image3 {
-  background: url('/images/p-image3.png');
+  background: url("/images/p-image3.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .partnership__description {

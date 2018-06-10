@@ -24,9 +24,12 @@
 }
 
 .gallery-page__icon {
+  background-image: url("/images/camera.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   color: #edb19a;
-  font-size: 1.3rem;
-  padding: 0 1rem 2rem 1rem;
+  padding: 1.7rem;
 }
 
 .gallery-page__description {
