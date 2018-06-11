@@ -126,7 +126,7 @@ class GalleryContent extends React.Component {
                       alt="Fotos e Videos"
                       onClick={() => this.isOpen(item.cont)}
                     />
-                    <div className="gallery-page__social">
+                    {/* <div className="gallery-page__social">
                       <span>
                         <TwitterShareButton
                           url={`http://tiago-pimentel.firebaseapp.com/galeria/${
@@ -157,7 +157,7 @@ class GalleryContent extends React.Component {
                           <WhatsappIcon size={54} round />
                         </WhatsappShareButton>
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                 ) : (
                   <div
@@ -174,7 +174,7 @@ class GalleryContent extends React.Component {
                       onClick={() => this.isOpen(item.cont)}
                       controls
                     />
-                    <div className="gallery-page__social">
+                    {/* <div className="gallery-page__social">
                       <span>
                         <TwitterShareButton
                           url={`http://tiago-pimentel.firebaseapp.com/galeria/${
@@ -206,7 +206,7 @@ class GalleryContent extends React.Component {
                           <WhatsappIcon size={54} round />
                         </WhatsappShareButton>
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                 );
               })

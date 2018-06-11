@@ -21,7 +21,7 @@ const Hero = () => {
               Aulas de Muay Thai e Boxe
             </p>
           </div>
-          <div className="button__site--margin">
+          <div className="button__site--margin hero__button-animation">
             <a href="#horarios" className="button__site">
               <span>Horários</span>
             </a>

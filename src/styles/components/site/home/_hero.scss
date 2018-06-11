@@ -39,7 +39,10 @@
 
 .hero__title {
   @extend .title__font;
+  animation: 0.5s fadein 0.5s forwards;
   font-size: 5rem;
+  opacity: 0;
+  padding-top: 4rem;
   text-transform: uppercase;
 }
 
@@ -50,4 +53,13 @@
 
 .hero__bullet--margin {
   margin: 5rem 0;
+  animation: 1s fadein 1s forwards;
+  opacity: 0;
+  padding-top: 4rem;
+}
+
+.hero__button-animation {
+  animation: 1s fadein 1s forwards;
+  opacity: 0;
+  padding-top: 4rem;
 }
