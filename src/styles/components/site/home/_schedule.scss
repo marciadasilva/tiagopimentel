@@ -45,24 +45,28 @@
 }
 
 .schedule__grid1 {
-  @supports (display: grid) {
+  @supports ((display: -ms-grid) or (display: grid)) {
     display: -ms-grid;
     display: grid;
-    grid-template: 50px repeat(4, [row] minmax(120px, 1fr)) / repeat(
-        3,
-        [col] minmax(30vw, 1fr)
-      );
+    -ms-grid-rows:
+      50px 12rem 12rem 12rem 12rem;
+        grid-template-rows:
+      50px 12rem 12rem 12rem 12rem;
+    -ms-grid-columns: 30vw 30vw 30vw;
+        grid-template-columns: 30vw 30vw 30vw;
     -webkit-box-shadow: 0px 2px 2rem rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 2rem rgba(0, 0, 0, 0.1);
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
   }
-  @supports (display: grid) {
+  @supports ((display: -ms-grid) or (display: grid)) {
     @media (min-width: $desktop-breakpoint) {
-      grid-template: 50px repeat(4, [row] minmax(120px, 1fr)) / repeat(
-          3,
-          [col] minmax(12vw, 1fr)
-        );
+      -ms-grid-rows:
+      50px 12rem 12rem 12rem 12rem;
+          grid-template-rows:
+      50px 12rem 12rem 12rem 12rem;
+      -ms-grid-columns: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
     }
   }
 
@@ -72,14 +76,16 @@
     background-position: center;
     background-repeat: no-repeat; 
     background-size: contain;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     height: 30rem;
   }
 
 
-  @supports not (display: grid) {
+  @supports not ((display: -ms-grid) or (display: grid)) {
     @media (min-width: $desktop-breakpoint) {
-      flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
       height: 50rem;
       background-position: right;
     }
@@ -87,25 +93,29 @@
 }
 
 .schedule__grid2 {
-  @supports (display: grid) {
+  @supports ((display: -ms-grid) or (display: grid)) {
     -webkit-box-shadow: 0px 2px 2rem rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 2rem rgba(0, 0, 0, 0.1);
     display: -ms-grid;
     display: grid;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    grid-template: 50px repeat(4, [row] minmax(120px, 1fr)) / repeat(
-        3,
-        [col] minmax(30vw, 1fr)
-      );
+    -ms-grid-rows:
+    50px 12rem 12rem 12rem 12rem;
+        grid-template-rows:
+    50px 12rem 12rem 12rem 12rem;
+    -ms-grid-columns: 30vw 30vw 30vw;
+        grid-template-columns: 30vw 30vw 30vw;
   }  
 
-  @supports (display: grid) {
+  @supports ((display: -ms-grid) or (display: grid)) {
     @media (min-width: $desktop-breakpoint) {
-      grid-template: 50px repeat(4, [row] minmax(120px, 1fr)) / repeat(
-          3,
-          [col] minmax(12vw, 1fr)
-        );
+      -ms-grid-rows:
+      50px 12rem 12rem 12rem 12rem;
+          grid-template-rows:
+      50px 12rem 12rem 12rem 12rem;
+      -ms-grid-columns: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
     }
   }
 
@@ -115,13 +125,15 @@
     background-position: center;
     background-repeat: no-repeat; 
     background-size: contain;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     height: 30rem;
   }
 
-  @supports not (display: grid) {
+  @supports not ((display: -ms-grid) or (display: grid)) {
     @media (min-width: $desktop-breakpoint) {
-      flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
       height: 50rem;
       background-position: left;
     }
@@ -129,7 +141,7 @@
 }
 
 .schedule__week {
-  @supports not (display: grid) {
+  @supports not ((display: -ms-grid) or (display: grid)) {
     display: none;
   }
   background-color: #242424;
@@ -146,7 +158,7 @@
 }
 
 .schedule__hour {
-  @supports not (display: grid) {
+  @supports not ((display: -ms-grid) or (display: grid)) {
     display: none;
   }
   display: -webkit-box;
