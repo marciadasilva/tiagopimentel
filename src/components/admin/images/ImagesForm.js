@@ -93,6 +93,9 @@ export class ImagesForm extends React.Component {
           <option key="jiujitsu" value="jiujitsu">
             Jiu-Jitsu
           </option>
+          <option key="private" value="private">
+            Aula Particular
+          </option>
         </select>
 
         <label className="label button">

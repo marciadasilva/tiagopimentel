@@ -99,6 +99,9 @@ export class VideosForm extends React.Component {
           <option key="jiujitsu" value="jiujitsu">
             Jiu-Jitsu
           </option>
+          <option key="private" value="private">
+            Aula Particular
+          </option>
         </select>
 
         <select

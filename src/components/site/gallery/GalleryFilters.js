@@ -73,6 +73,7 @@ export class GalleryFilters extends React.Component {
             </option>
             <option value="thai">Muay Thai</option>
             <option value="jiujitsu">Jiu-Jitsu</option>
+            <option value="private">Aula Particular</option>
             <option value="all">Todas</option>
           </select>
         </div>
@@ -107,4 +108,7 @@ const mapDispatchToProps = dispatch => ({
     dispatch(setVisualizationFilter(visualization))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(GalleryFilters);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(GalleryFilters);
