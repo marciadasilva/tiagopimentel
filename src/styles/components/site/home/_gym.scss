@@ -97,6 +97,9 @@
   font-size: 1.3rem;
   padding: 0.5rem 2rem;
   text-align: center;
+  @media (min-width: $tablet-breakpoint) {
+    padding: 1.5rem 2rem 0.5rem;
+  }
   @media (min-width: $desktop-breakpoint) {
     padding: 1.5rem 12rem 0.5rem;
   }
