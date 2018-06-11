@@ -8,9 +8,28 @@
     <title>Tiago Pimentel</title>
     <link rel="icon" type="image/png" href="/images/favicon.png">
     <link rel="stylesheet" type="text/css" href="/dist/styles.css">
+    <style>
+      .ie__warning {
+        background-color: #242424;
+        color: #f4f4f4;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
+        text-align: center;
+        width: 100vw;        
+      }
+      .ie__warning__text {
+        padding-top: 45vh;
+      }
+    </style>
   </head>
   <body>
-    <!--[if lte IE 9]> Este site utiliza tecnologias que não são suportadas por versões anteriores ao Internet Explorer 11. Por favor atualize a versão de seu Internet Explorer ou acesse o site através de outro navegador. <![endif]-->
+    <!--[if lte IE 9]> 
+      <div class="ie__warning"> 
+        <p class="ie__warning__text"> Este site utiliza tecnologias que não são suportadas por versões anteriores ao Internet Explorer 11. </p>
+        <p> Por favor atualize a versão de seu Internet Explorer ou acesse o site através de outro navegador.  </p>
+      </div>
+    <![endif]-->
     <main id="app"></main>
     <script src="/dist/bundle.js"></script>
     <script src="/dist/font-awesome.min.js"></script>

@@ -7,33 +7,51 @@
   display: block;
 }
 
-@supports (display: grid) {
+@supports ((display: -ms-grid) or (display: grid)) {
   .grid-hero {
     display: -ms-grid;
     display: grid;
-    grid-template:
-      repeat(6, [row] minmax(120px, 255px)) / 0.7rem repeat(4, [col] 1fr)
-      0.7rem;
+    // grid-template:
+    //   repeat(6, [row] minmax(120px, 255px)) / 0.7rem repeat(4, [col] 1fr)
+    //   0.7rem;
+    -ms-grid-rows:
+      120px 120px 120px 150px;
+        grid-template-rows:
+      120px 120px 120px 150px;
+    -ms-grid-columns: 0.7rem 1fr 1fr 1fr 1fr 0.7rem;
+        grid-template-columns: 0.7rem 1fr 1fr 1fr 1fr 0.7rem; 
   }
 }
 
-@supports (display: grid) {
+@supports ((display: -ms-grid) or (display: grid)) {
   @media (min-width: 720px) {
     .grid-hero {
-      grid-template:
-        repeat(4, [row] minmax(150px, 210px)) / 1rem repeat(4, [col] 1fr)
-        1rem;
+      // grid-template:
+      //   repeat(4, [row] minmax(150px, 210px)) / 1rem repeat(4, [col] 1fr)
+      //   1rem;
+      -ms-grid-rows:
+      120px 120px 120px;
+          grid-template-rows:
+      120px 120px 120px;
+      -ms-grid-columns: 1rem 1fr 1fr 1fr 1fr 1rem;
+          grid-template-columns: 1rem 1fr 1fr 1fr 1fr 1rem; 
       grid-gap: 20px;
     }
   }
 }
 
-@supports (display: grid) {
+@supports ((display: -ms-grid) or (display: grid)) {
   @media (min-width: 1025px) {
     .grid-hero {
-      grid-template:
-        repeat(4, [row] minmax(150px, 230px)) / 100px repeat(4, [col] 1fr)
-        100px;
+      // grid-template:
+      //   repeat(4, [row] minmax(150px, 230px)) / 100px repeat(4, [col] 1fr)
+      //   100px;
+      -ms-grid-rows:
+      120px 120px 120px;
+          grid-template-rows:
+      120px 120px 120px;
+      -ms-grid-columns: 10rem 1fr 1fr 1fr 1fr 10rem;
+          grid-template-columns: 10rem 1fr 1fr 1fr 1fr 10rem; 
       grid-gap: 20px;
     }
   }
