@@ -39,7 +39,8 @@
 
 .hero__title {
   @extend .title__font;
-  animation: 0.5s fadein 0.5s forwards;
+  -webkit-animation: 0.5s fadein 1s ease-in forwards;
+  animation: 0.5s fadein 1s ease-in forwards;
   font-size: 5rem;
   opacity: 0;
   padding-top: 4rem;
@@ -53,13 +54,15 @@
 
 .hero__bullet--margin {
   margin: 5rem 0;
-  animation: 1s fadein 1s ease-in forwards;
+  -webkit-animation: 0.5s fadein 1s ease-in forwards;
+  animation: 0.5s fadein 1s ease-in forwards;
   opacity: 0;
   padding-top: 4rem;
 }
 
 .hero__button-animation {
-  animation: 1s fadein 1s ease-in forwards;
+  -webkit-animation: 0.5s fadein 1s ease-in forwards;
+  animation: 0.5s fadein 1s ease-in forwards;
   opacity: 0;
   padding-top: 4rem;
 }
